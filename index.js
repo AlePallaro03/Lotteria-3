@@ -1,7 +1,8 @@
 const express = require('express');
 const webServer = express();
 const port = 30120;
-
+console.log("Lotteria realizzata da")
+console.log("Alessandro Pallaro e Luca Gregorio Buscema")
 const router = require('./router.js');
 
 webServer.set('view engine', 'ejs');
