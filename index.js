@@ -5,13 +5,15 @@ console.log("Lotteria realizzata da")
 console.log()
 console.log("Alessandro Pallaro e Luca Buscema")
 console.log()
+console.log("Inserire /event nell'URL per aprire la lotteria")
+console.log()
 const router = require('./router.js');
 
 webServer.use('/', router);
 webServer.use('/event', express.static('evento'));
 
 webServer.listen(port, function(){ //funzione per output in console
-const P = ['/','-', '|'];
+const P = ['/','-', '|']; 
 let x = 0;
 const loader = setInterval(() => {
   process.stdout.write(`\r${P[x++]}`);
