@@ -45,8 +45,8 @@ webServer.get('/biglie', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/gratta3', express.static('gratta3'));
-webServer.get('/gratta3', function(req,res){
+webServer.use('/event/roulette', express.static('roulette'));
+webServer.get('/roulette', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
