@@ -1,3 +1,7 @@
+router.get('/gratta',function(req, res){
+  res.redirect('/gratta1/index.html')
+});
+
 window.addEventListener("DOMContentLoaded", () => {
 
     const emojiContainer = document.querySelector('.emoji-container'),

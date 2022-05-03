@@ -1,5 +1,5 @@
 router.get('/gratta',function(req, res){
-  res.redirect('/gratta3/index.html')
+  res.redirect('/gratta2/index.html')
 });
 
 window.addEventListener("DOMContentLoaded", () => {

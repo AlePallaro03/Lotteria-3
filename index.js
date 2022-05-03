@@ -1,4 +1,5 @@
 const express = require('express'); //importiamo modulo esterno (express)
+const path = require('path'); //importo path
 const webServer = express();
 const port = 30120; //numero della porta
 const soldi = 0;
@@ -22,6 +23,26 @@ webServer.use('/event', express.static('evento')); //MIDDLEWARE
 
 webServer.get('/', function(req,res){
   res.send('Per aprire la lotteria digita nell URL "/event"');
+});
+
+webServer.use('/event/login', express.static('login'));
+webServer.get('/login', function(req,res){
+   res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+webServer.use('/event/gratta1', express.static('gratta1'));
+webServer.get('/', function(req,res){
+   res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+webServer.use('/event/gratta2', express.static('gratta2'));
+webServer.get('/', function(req,res){
+   res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+webServer.use('/event/gratta3', express.static('gratta3'));
+webServer.get('/', function(req,res){
+   res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 webServer.listen(port, function(){ //funzione per output in console
