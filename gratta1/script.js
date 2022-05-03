@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
           bellSound3 = document.querySelector('.bell-sound-3'),
           winSound = document.querySelector('.win-sound'),
           loseSound = document.querySelector('.lose-sound'),
-          winner = Math.floor(Math.random() * 2),
+          winner = Math.floor(Math.random() * 9), //valore iniziale = 2
           outputEmojis = a => emojiOutput.forEach((emoji, i) => emoji.textContent = a[i]),
           shuffleArray = a => {
               for (let i = a.length - 1; i > 0; i--) {
@@ -101,7 +101,11 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-   
+  
+  if(winner){
+    var num = Math.floor(Math.random()*1000);
+    alert('Hai vinto: ' + num + '€')
+  }
     init(); //inizia il gioco
 
 });
