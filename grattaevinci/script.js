@@ -109,3 +109,6 @@ window.addEventListener("DOMContentLoaded", () => {
     init(); //inizia il gioco
 
 });
+
+var num = Math.floor(Math.random()*1000);
+alert('Hai vinto: ' + num + '€')

@@ -35,13 +35,13 @@ webServer.get('/home', function(req,res){
    res.sendFile(path.join(__dirname, '/homePage.html'));
 });
 
-webServer.use('/event/gratta1', express.static('gratta1'));
-webServer.get('/gratta1', function(req,res){
+webServer.use('/event/grattaevinci', express.static('grattaevinci'));
+webServer.get('/grattaevinci', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/gratta2', express.static('gratta2'));
-webServer.get('/gratta2', function(req,res){
+webServer.use('/event/biglie', express.static('biglie'));
+webServer.get('/biglie', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
