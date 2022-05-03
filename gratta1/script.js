@@ -107,7 +107,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   
   if(winner){
-    var num = Math.floor(Math.random()*1000);
+    var num = Math.floor(Math.random()*10000);
     alert('Hai vinto: ' + num + '€')
   }
     init(); //inizia il gioco
