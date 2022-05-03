@@ -19,6 +19,7 @@ webServer.use('/', router);
 
 webServer.use('/event', express.static('evento')); //MIDDLEWARE
 
+
 webServer.get('/', function(req,res){
   res.send('Per aprire la lotteria digita nell URL "/event"');
 });

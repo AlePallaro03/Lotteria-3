@@ -5,5 +5,4 @@ router.get('/event',function(req, res){
   res.redirect('/event/index.html') //se viene eseguita in URL la dicitura /event verremo reinderizzati alla nostra pagina
 });
 
-
 module.exports=router; //esportiamo il modulo express
