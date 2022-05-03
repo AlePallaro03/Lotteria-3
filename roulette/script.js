@@ -53,7 +53,7 @@ $(document).ready(function() {
           yourChips -= parseInt(selectChipVal);
           outputUI();
         } else {
-          alert("籌碼不足");
+          alert("Non hai abbastanza Chips");
         }
       }
     });
@@ -116,9 +116,9 @@ $(document).ready(function() {
         console.log(ranRotate, rotateTimes);
 
         whichWin(winNumber);
-        $(".yourLog").prepend("<li>押注 <span>-" + allBet + "</span></li>");
+        $(".yourLog").prepend("<li>scommessa <span>-" + allBet + "</span></li>");
         $(".yourLog").prepend(
-          `<li>開出 <span class="allBet">${winNumber}</span> 派彩 <span>+ ${allWin} </span></li>`
+          `<li>fuori <span class="allBet">${winNumber}</span> pagamento <span>+ ${allWin} </span></li>`
         );
         for (i = 0; i < $(".yourLog").children().length - 4; i++) {
           $(".yourLog")
@@ -127,7 +127,7 @@ $(document).ready(function() {
         }
         outputUI();
       } else {
-        alert("籌碼不足");
+        alert("Non hai abbastanza chips");
       }
     });
   });
@@ -186,7 +186,7 @@ $(document).ready(function() {
       }
     }
     winLine(winId);
-    console.log("中獎區: " + winId);
+    console.log("zona vincente: " + winId);
   }
 
   //Mostra aree vincenti e pagamenti
@@ -238,7 +238,7 @@ $(document).ready(function() {
     }
     yourChips += parseInt(allWin) - allBet;
     outputUI();
-    console.log("獲得彩金: " + allWin);
+    console.log("ottenere bonus: " + allWin);
   }
 
   //schermata di output

@@ -1,7 +1,6 @@
 {
   "name": "lotteria-3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +15,18 @@
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.2",
     "mongoose": "^6.3.2",
+    "node-sass": "^7.0.1",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlePallaro03/Lotteria-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlePallaro03/Lotteria-3/issues"
+  },
+  "homepage": "https://github.com/AlePallaro03/Lotteria-3#readme",
+  "description": ""
 }
