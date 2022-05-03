@@ -30,18 +30,23 @@ webServer.get('/login', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
+webServer.use('/event/home', express.static('home'));
+webServer.get('/home', function(req,res){
+   res.sendFile(path.join(__dirname, '/homePage.html'));
+});
+
 webServer.use('/event/gratta1', express.static('gratta1'));
-webServer.get('/', function(req,res){
+webServer.get('/gratta1', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 webServer.use('/event/gratta2', express.static('gratta2'));
-webServer.get('/', function(req,res){
+webServer.get('/gratta2', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 webServer.use('/event/gratta3', express.static('gratta3'));
-webServer.get('/', function(req,res){
+webServer.get('/gratta3', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
