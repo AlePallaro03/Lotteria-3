@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Montserrat;
+    user-select: none;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    padding: 30px 30px 0px 30px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(39, 19, 4, 0.49);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(54, 28, 7, 0.49);
+    box-shadow: 0px 0px 8px 0px rgba(39, 19, 4, 0.49);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+}
+input::placeholder {
+    font-weight: 300;
+    color: #492a07;
+}
+input {
+    width: 100%;
+    height: auto;
+    text-align: start;
+    font-size: 25px;
+    font-family: Montserrat;
+    padding: 5px 10px 0px 10px;
+    border: 0;
+    margin: 10px 0 0 0;
+    border-bottom: 2px solid #492a07;
+    color: #492a07;
+    outline: 0;
+}
+input:hover {
+    animation-name: ver;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes ver {
+    from {
+
+    }
+    to {
+        border-bottom: 2px solid #ffc31f;
+    }
+}
+input:focus {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes anima {
+    from {
+    }
+    to {
+        border-bottom: 2px solid#ffc31f;
+    }
+}
+.cadastro {
+    color: #492a07;
+    width: 100%;
+    font-size: 25px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    user-select: none;
+}
+.button {
+    cursor: pointer;
+    user-select: none;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    padding: 20px;
+    background-color: #ffc31f;
+    color: #492a07;
+    border-radius: 2px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+.button:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes botao {
+    from {
+
+    }
+    to {
+        background-color:#ffbb00c4;
+        border: 1px solid #492a07;
+    }
+}
+.dir {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.direitos {
+    color: rgba(0, 0, 0, 0.596);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 425px) and (min-width:375px) {
+    input {
+        font-size: 20px;
+        margin: 5px 0px 5px 0px;
+    }
+    .box {
+        padding: 40px 10px 0px 10px;
+        width: 350px;
+    }
+    .cadastro {
+        font-size: 15px;
+    }
+}
+@media(max-width: 375px) and (min-width:320px) {
+    input {
+        font-size: 20px;
+        margin: 5px 0px 5px 0px;
+    }
+    .box {
+        padding: 40px 5px 0px 5px;
+        width: 320px;
+        border-radius: 3px;
+    }
+    .cadastro {
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px) {
+    input {
+        font-size: 20px;
+        margin: 5px 0px 5px 0px;
+        font-size: 25px;
+    }
+    .box {
+        padding: 40px 5px 0px 5px;
+        width: 280px;
+    }
+    .cadastro {
+        font-size: 15px;
+    }
+    .button {
+        margin-top: 10px;
+    }
+}

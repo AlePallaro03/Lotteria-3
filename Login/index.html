@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title> Login </title>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body onload="">
+    <div class="container">
+        <div class="box">
+            <form method="POST">
+                <div class="cadastro"> ALE E LUK </div>
+                <div class="line">
+                    <label for="nome" class="labelLine"></label>
+                    <input type="text" name="nome" placeholder="Nome" class="nome" maxlength="20" id="nome" onkeyup="verTecla()">
+                </div>
+                <div class="line name">
+                    <label for="nome" class="labelLine"></label>
+                    <input type="text" name="nome" placeholder="Sobrenome" class="nome" maxlength="30" id="sobrenome" onkeyup="verificarNumeros()">
+                </div>
+                <div class="line">
+                    <label for="cad_user" class="labelLine"></label>
+                    <input type="text" name="cad_user" id="cad_user"  placeholder="Novo usuário" onkeyup="verificarEspaco()">
+                </div>
+                <div class="line">
+                    <label for="cad_senha" class="labelLine">  </label>
+                    <input type="password" name="cad_senha" id="cad_senha"  placeholder="Nova senha" style="font-weight: 400;" onkeyup="verificarEspaco()">
+                </div>
+                <div class="line">
+                    <label for="cad_senha" class="labelLine">  </label>
+                    <input type="password" name="cad_senha" id="senha_confirm"  placeholder="Confirmar senha" style="font-weight: 400;">
+                </div>
+            </form>
+            <div class="cadastro">
+                <div class="button" onclick="salvar()"> ALE E LUK </div>
+            </div>
+            <div class="line dir">
+                <div class="direitos"> Tutte le informazioni rimarranno riservate</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
