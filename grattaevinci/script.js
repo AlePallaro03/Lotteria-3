@@ -23,6 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
               if (winner) {
                   emojis.push('💎');
                   message = "Congratulazioni hai vinto!";
+
               } else {
                   emojis.push('⌚');
                   message = "Hai perso! Grazie per aver giocato";
@@ -102,13 +103,10 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
   
-  if(winner){
-    var num = Math.floor(Math.random()*10000);
-    alert('Hai vinto: ' + num + '€')
-  }
+
     init(); //inizia il gioco
 
 });
 
-var num = Math.floor(Math.random()*1000);
-alert('Hai vinto: ' + num + '€')
+//var num = Math.floor(Math.random()*1000);
+//alert('Hai vinto: ' + num + '€')

@@ -1,131 +1,132 @@
-<html>
 <head>
-    <link rel="stylesheet/css" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Lotteria by LUK & ALE</title>
 </head>
-<body>
-<div class="gamingTable">
-  <div class="containerGrid">
-    <div class="zeroArea select" betId="0">0</div>
-
-    <div class="detailsArea1">
-      <div class="bgRed select" betId="1">1</div>
-      <div class="bgBlack select" betId="2">2</div>
-      <div class="bgRed select" betId="3">3</div>
-      <div class="bgBlack select" betId="4">4</div>
-      <div class="bgRed select" betId="5">5</div>
-      <div class="bgBlack select" betId="6">6</div>
-      <div class="bgRed select" betId="7">7</div>
-      <div class="bgBlack select" betId="8">8</div>
-      <div class="bgRed select" betId="9">9</div>
-      <div class="bgBlack select" betId="10">10</div>
-      <div class="bgBlack select" betId="11">11</div>
-      <div class="bgRed select" betId="12">12</div>
-    </div>
-    <div class="detailsArea2">
-      <div class="bgBlack select" betId="13">13</div>
-      <div class="bgRed select" betId="14">14</div>
-      <div class="bgBlack select" betId="15">15</div>
-      <div class="bgRed select" betId="16">16</div>
-      <div class="bgBlack select" betId="17">17</div>
-      <div class="bgRed select" betId="18">18</div>
-      <div class="bgRed select" betId="19">19</div>
-      <div class="bgBlack select" betId="20">20</div>
-      <div class="bgRed select" betId="21">21</div>
-      <div class="bgBlack select" betId="22">22</div>
-      <div class="bgRed select" betId="23">23</div>
-      <div class="bgBlack select" betId="24">24</div>
-    </div>
-    <div class="detailsArea3">
-      <div class="bgRed select" betId="25">25</div>
-      <div class="bgBlack select" betId="26">26</div>
-      <div class="bgRed select" betId="27">27</div>
-      <div class="bgBlack select" betId="28">28</div>
-      <div class="bgBlack select" betId="29">29</div>
-      <div class="bgRed select" betId="30">30</div>
-      <div class="bgBlack select" betId="31">31</div>
-      <div class="bgRed select" betId="32">32</div>
-      <div class="bgBlack select" betId="33">33</div>
-      <div class="bgRed select" betId="34">34</div>
-      <div class="bgBlack select" betId="35">35</div>
-      <div class="bgRed select" betId="36">36</div>
-    </div>
-
-    <div class="twoToOneArea"><span class="select" betId="37">2 to 1</span><span class="select" betId="38">2 to 1</span><span class="select" betId="39">2 to 1</span></div>
-    <div class="spaceL"></div>
-    <div class="firstArea select" betId="40">1st 12</div>
-    <div class="secondArea select" betId="41">2nd 12</div>
-    <div class="thirdArea select" betId="42">3rd 12</div>
-    <div class="spaceR"></div>
-    <div class="halfArea1 select" betId="43">1 to 18</div>
-    <div class="evenArea select" betId="44">EVEN</div>
-    <div class="redArea diamond select" betId="45"></div>
-    <div class="blackArea diamond select" betId="46"></div>
-    <div class="oddArea select" betId="47">ODD</div>
-    <div class="halfArea2 select" betId="48">19 to 36</div>
-  </div>
-
-  <div class="chipBox">
-    <div class="chip draggable" val="1">1</div>
-    <div class="chip chipGreen draggable" val="10">10</div>
-    <div class="chip chipYellow draggable" val="50">50</div>
-    <div class="chip chipRed draggable" val="100">100</div>
-    <div class="chip chipBlack draggable" val="500">500</div>
+<div class="title"><b>Ale e Luk</b><br>Roulette Automatica</div>
+<p id="msg"></p>
+<div id="his">
+  <div id="a0" class="his-h"></div>
+  <div id="a1" class="his-h"></div>
+  <div id="a2" class="his-h"></div>
+  <div id="a3" class="his-h"></div>
+  <div id="a4" class="his-h"></div>
+  <div id="a5" class="his-h"></div>
+  <div id="a6" class="his-h"></div>
+  <div id="a7" class="his-h"></div>
+  <div id="a8" class="his-h"></div>
+</div>
+<div id="bal"></div>
+<div id="stat"></div>
+<div style="clear: both;"></div>
+<div class="shadow"></div>
+<div class="roll-h">
+  <div id="roll">
+    <div class="green">0</div>
+    <div class="black">1</div>
+    <div class="red">2</div>
+    <div class="black">3</div>
+    <div class="red">4</div>
+    <div class="black">5</div>
+    <div class="red">6</div>
+    <div class="black">7</div>
+    <div class="red">8</div>
+    <div class="black">9</div>
+    <div class="red">10</div>
+    <div class="black">11</div>
+    <div class="red">12</div>
+    <div class="black">13</div>
+    <div class="red">14</div>
+    <div class="black">15</div>
+    <div class="red">16</div>
+    <div class="black">17</div>
+    <div class="red">18</div>
+    <div class="black">19</div>
+    <div class="red">20</div>
+    <div class="black">21</div>
+    <div class="red">22</div>
+    <div class="black">23</div>
+    <div class="red">24</div>
+    <div class="black">25</div>
+    <div class="red">26</div>
+    <div class="black">27</div>
+    <div class="red">28</div>
+    <div class="black">29</div>
+    <div class="red">30</div>
+    <div class="black">31</div>
+    <div class="red">32</div>
+    <div class="black">33</div>
+    <div class="red">34</div>
+    <div class="black">35</div>
+    <div class="red">36</div>
+    <div class="black">37</div>
+    <div class="red">38</div>
+    <div class="black">39</div>
+    <div class="red">40</div>
+    <div class="black">41</div>
+    <div class="red">42</div>
+    <div class="black">43</div>
+    <div class="red">44</div>
+    <div class="black">45</div>
+    <div class="red">46</div>
+    <div class="black">47</div>
+    <div class="red">48</div>
+    <div class="black">49</div>
+    <div class="red">50</div>
+    <div class="black">51</div>
+    <div class="red">52</div>
+    <div class="black">53</div>
+    <div class="red">54</div>
+    <div class="black">55</div>
+    <div class="red">56</div>
+    <div class="black">57</div>
+    <div class="red">58</div>
+    <div class="black">59</div>
+    <div class="red">60</div>
+    <div class="black">61</div>
+    <div class="red">62</div>
+    <div class="black">63</div>
+    <div class="red">64</div>
+    <div class="black">65</div>
+    <div class="red">66</div>
+    <div class="black">67</div>
+    <div class="red">68</div>
+    <div class="black">69</div>
+    <div class="red">70</div>
+    <div class="black">71</div>
+    <div class="red">72</div>
+    <div class="black">73</div>
+    <div class="red">74</div>
+    <div class="black">75</div>
+    <div class="red">76</div>
+    <div class="black">77</div>
+    <div class="red">78</div>
+    <div class="black">79</div>
+    <div class="red">80</div>
+    <div class="black">81</div>
+    <div class="red">82</div>
+    <div class="black">83</div>
+    <div class="red">84</div>
+    <div class="black">85</div>
+    <div class="red">86</div>
+    <div class="black">77</div>
+    <div class="red">88</div>
+    <div class="black">89</div>
+    <div class="red">90</div>
+    <div class="black">91</div>
+    <div class="red">92</div>
+    <div class="black">93</div>
+    <div class="red">94</div>
+    <div class="black">95</div>
+    <div class="red">96</div>
+    <div class="black">97</div>
+    <div class="red">98</div>
+    <div class="black">99</div>
+    <div class="green">100</div>
   </div>
 </div>
-
-<div class="controlBoard">
-  <div class="allBetBox">Chips possedute: <span class="allBet" id="yourChips"></span>
-    <ul class="yourLog"></ul>
-  </div>
-  <div class="allBetBox">Scommessa totali: <span class="allBet" id="allBet"></span></div>
-  <div class="controlBtn" id="lottery">Gioca<span class="allBet" id="winNumber">-</span></div>
-  <div class="controlBtn" id="reset">Toglie le chips dal tavolo</div>
-</div>
-
-<div class="wheelBox">
-  <div class="wheel">
-    <ul>
-      <li class="green">0</li>
-      <li class="red">1</li>
-      <li class="black">2</li>
-      <li class="red">3</li>
-      <li class="black">4</li>
-      <li class="red">5</li>
-      <li class="black">6</li>
-      <li class="red">7</li>
-      <li class="black">8</li>
-      <li class="red">9</li>
-      <li class="black">10</li>
-      <li class="black">11</li>
-      <li class="red">12</li>
-      <li class="black">13</li>
-      <li class="red">14</li>
-      <li class="black">15</li>
-      <li class="red">16</li>
-      <li class="black">17</li>
-      <li class="red">18</li>
-      <li class="red">19</li>
-      <li class="black">20</li>
-      <li class="red">21</li>
-      <li class="black">22</li>
-      <li class="red">23</li>
-      <li class="black">24</li>
-      <li class="red">25</li>
-      <li class="black">26</li>
-      <li class="red">27</li>
-      <li class="black">28</li>
-      <li class="black">29</li>
-      <li class="red">30</li>
-      <li class="black">31</li>
-      <li class="red">32</li>
-      <li class="black">33</li>
-      <li class="red">34</li>
-      <li class="black">35</li>
-      <li class="red">36</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>
+<div class="ticker"></div>
+<input type="number" name="bet" id="bet" />
+<button onClick="roll('red')">Red</button>
+<button onClick="roll('green')">Green</button>
+<button onClick="roll('black')">Black</button>
