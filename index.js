@@ -50,6 +50,11 @@ webServer.get('/roulette', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
+webServer.use('/event/slot', express.static('slot'));
+webServer.get('/slot', function(req,res){
+   res.sendFile(path.join(__dirname, '/index.html'));
+});
+
 webServer.listen(port, function(){ //funzione per output in console
 const P = ['/','-', '|']; //vettore con simboli
 let x = 0;
