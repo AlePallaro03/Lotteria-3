@@ -29,7 +29,7 @@ body {
 }
 
 #roll {
-  width: 2000px;
+  width: 5000px;
   height: 40px;
   background: #0077ee;
   margin: 0 auto;
@@ -42,13 +42,6 @@ body {
   overflow: hidden;
 }
 
-.shadow {
-  width: 360px;
-  height: 40px;
-  margin: 0 auto;
-  box-shadow: 50px 0px 25px -12px #333 inset, -50px 0px 25px -12px #333 inset;
-  transform: translateY(40px);
-}
 
 .red,
 .black,

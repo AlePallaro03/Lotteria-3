@@ -60,5 +60,7 @@ const loader = setInterval(() => {
 console.log(`\x1b[40m\x1b[36m Programma in esecuzione alla porta: ${port}`) //output in console
 });
 
+
+//Vincita in console, non toccare per ora
 var num = Math.floor(Math.random()*1000);
 alert('Hai vinto: ' + num + '€')

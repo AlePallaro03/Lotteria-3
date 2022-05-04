@@ -31,7 +31,7 @@ function roll(color) {
   if (bet > bal) {
     document.getElementById("msg").innerHTML = "Bet troppo alta!";
   } else {
-    var win = Math.floor((Math.random() * 40) + 0);
+    var win = Math.floor((Math.random() * 100) + 0);
     if (win > 4) {
       var rollm = win * 40 - 40 * 4.2;
       document.getElementById("roll").style = "margin-left: -" + rollm + "px ";
@@ -71,5 +71,4 @@ function roll(color) {
     document.getElementById("bal").innerHTML = bal;
     document.getElementById("stat").innerHTML = bets;
   }
-  
 }
