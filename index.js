@@ -25,32 +25,32 @@ webServer.get('/', function(req,res){
   res.send('Per aprire la lotteria digita nell URL "/event"');
 });
 
-webServer.use('/event/login', express.static('login'));
+webServer.use('/event/login', express.static('login')); //pagine del login
 webServer.get('/login', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/home', express.static('home'));
+webServer.use('/event/home', express.static('home')); //home per la scelta dei giochi
 webServer.get('/home', function(req,res){
    res.sendFile(path.join(__dirname, '/homePage.html'));
 });
 
-webServer.use('/event/grattaevinci', express.static('grattaevinci'));
+webServer.use('/event/grattaevinci', express.static('grattaevinci')); //gratta e vinci
 webServer.get('/grattaevinci', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/biglie', express.static('biglie'));
+webServer.use('/event/biglie', express.static('biglie')); //gioco delle biglie
 webServer.get('/biglie', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/roulette', express.static('roulette'));
+webServer.use('/event/roulette', express.static('roulette')); //roulette
 webServer.get('/roulette', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/slot', express.static('slot'));
+webServer.use('/event/slot', express.static('slot')); //slot machine
 webServer.get('/slot', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
