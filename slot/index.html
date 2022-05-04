@@ -8,6 +8,7 @@
     
 </head>
     <body>
+       <h1>Slot Machine Ale e Luk</h1>
         <div class="c">
             <div>VINTI💰 <b id="w">00000</b></div>  
             <div>SOLDI💸 <b id="d">00100</b></div>
@@ -41,5 +42,34 @@
           </div>
           <div class="p">GIOCA<div id="play" onclick="playgame()">🔴</div></div>
       </div>
+
+      <div id="audio">
+        <audio controls loop autoplay hidden>
+      
+            <source src="music/music.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+        var audio = new Audio('music/music.mp3');
+        audio.volume = 0.1;
+        audio.play();
+        if (audio) {
+
+  window.addEventListener('keydown', function (event) {
+
+    var key = event.which || event.keyCode;
+
+    if (key === 32) { // spacebar
+
+     
+      event.preventDefault();
+
+      audio.paused ? audio.play() : audio.pause();
+
+    }
+
+  });
+}
+    </script>
     </body>
 </html>

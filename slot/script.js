@@ -1,6 +1,6 @@
 var w = 0,d = 100, st = false,pos = [0, 1, 2, 3, 4, 5, 7, 9, 11, 17, 16, 15, 14, 13, 12, 10, 8, 6],
-p = Math.floor(Math.random() * pos.length),vel = 200,pi, be = 0, mdm = "https://www.sessiontown.com/games/keyboard/piano//"
-,sounds = {
+p = Math.floor(Math.random() * pos.length),vel = 200,pi, be = 0, mdm = //"https://www.sessiontown.com/games/keyboard/piano//"
+ sounds = {
     "t1" : new Audio(mdm+"f3.mp3"), "t2" : new Audio(mdm+"g3.mp3"),
     "t3" : new Audio(mdm+"a3.mp3"), "t4" : new Audio(mdm+"b3.mp3"),
     "t5" : new Audio(mdm+"c4.mp3"), "t6" : new Audio(mdm+"d4.mp3"),
