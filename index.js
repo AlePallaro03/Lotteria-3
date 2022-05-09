@@ -32,7 +32,7 @@ webServer.get('/login', function(req,res){
 
 webServer.use('/event/home', express.static('home')); //home per la scelta dei giochi
 webServer.get('/home', function(req,res){
-   res.sendFile(path.join(__dirname, '/homePage.html'));
+   res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 webServer.use('/event/grattaevinci', express.static('grattaevinci')); //gratta e vinci
