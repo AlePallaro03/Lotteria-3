@@ -1,4 +1,4 @@
-const express = require('express'); //importiamo modulo esterno (express)
+ const express = require('express'); //importiamo modulo esterno (express)
 const path = require('path'); //importo path
 const webServer = express();
 const port = 30120; //numero della porta
@@ -18,8 +18,7 @@ const router = require('./router.js');
 
 webServer.use('/', router); 
 
-webServer.use('/event', express.static('evento')); //MIDDLEWARE
-
+webServer.use('/', express.static('evento')); //MIDDLEWARE
 
 webServer.get('/', function(req,res){
   res.send('Per aprire la lotteria digita nell URL "/event"');
