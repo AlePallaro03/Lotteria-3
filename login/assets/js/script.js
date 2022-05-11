@@ -109,7 +109,7 @@ function espacos() {
     var loginSenha = document.getElementById('loginSenha').value;
 
     if(loginUser == localStorage.user && loginSenha == localStorage.senha ) {
-    window.location.href="https://lotteria-3.pallaro.repl.co/event/home/index.html";
+    window.location.href="https://lotteria-3.pallaro.repl.co/home/index.html";
   } else {
     alert("Dati non validi")
   }

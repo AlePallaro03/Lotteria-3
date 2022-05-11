@@ -201,6 +201,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
     comebackBtn.classList.add("comebackBtn");
     section.append(comebackBtn);
     comebackBtn.textContent = "Rigioca";
-    comebackBtn.setAttribute("href", "https://lotteria-ale-e-luk.pallaro.repl.co/event/biglie/");
+    comebackBtn.setAttribute("href", "https://lotteria-ale-e-luk.pallaro.repl.co/biglie/");
   }
 });

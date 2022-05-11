@@ -1,4 +1,4 @@
- const express = require('express'); //importiamo modulo esterno (express)
+const express = require('express'); //importiamo modulo esterno (express)
 const path = require('path'); //importo path
 const webServer = express();
 const port = 30120; //numero della porta
@@ -13,7 +13,7 @@ console.log(`
 ╚═╝  ╚═╝╚══════╝╚══════╝    ╚══════╝    ╚══════╝ ╚═════╝ ╚═╝  ╚═╝
   `)
 
-console.log("Inserire /event nell'URL per aprire la lotteria") //output
+//console.log("Inserire /event nell'URL per aprire la lotteria") //output
 const router = require('./router.js');
 
 webServer.use('/', router); 
@@ -24,32 +24,32 @@ webServer.get('/', function(req,res){
   res.send('Per aprire la lotteria digita nell URL "/event"');
 });
 
-webServer.use('/event/login', express.static('login')); //pagine del login
+webServer.use('/login', express.static('login')); //pagine del login
 webServer.get('/login', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/home', express.static('home')); //home per la scelta dei giochi
+webServer.use('/home', express.static('home')); //home per la scelta dei giochi
 webServer.get('/home', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/grattaevinci', express.static('grattaevinci')); //gratta e vinci
+webServer.use('/grattaevinci', express.static('grattaevinci')); //gratta e vinci
 webServer.get('/grattaevinci', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/biglie', express.static('biglie')); //gioco delle biglie
+webServer.use('/biglie', express.static('biglie')); //gioco delle biglie
 webServer.get('/biglie', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/roulette', express.static('roulette')); //roulette
+webServer.use('/roulette', express.static('roulette')); //roulette
 webServer.get('/roulette', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-webServer.use('/event/slot', express.static('slot')); //slot machine
+webServer.use('/slot', express.static('slot')); //slot machine
 webServer.get('/slot', function(req,res){
    res.sendFile(path.join(__dirname, '/index.html'));
 });

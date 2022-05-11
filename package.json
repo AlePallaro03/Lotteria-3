@@ -17,9 +17,9 @@
     "mongoose": "^6.3.2",
     "node-sass": "^7.0.1",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "python": "^0.0.4"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlePallaro03/Lotteria-3.git"
