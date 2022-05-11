@@ -1,48 +1,30 @@
 <!DOCTYPE html>
 <html>
-<title>HomePage</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link type="text/css" rel="stylesheet" href="css/styleH.css">
+    <head>
+        <title>Homepage Casinò</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href='.../css/styleH.css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    </head>
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#" class="w3-bar-item w3-button">Istruzioni</a>
-  <a href="#" class="w3-bar-item w3-button">Giochi<a>
-  <a href="#" class="w3-bar-item w3-button">Contattaci<a>
-</div>
-
-<div id="main">
-
-<div class="w3-teal">
-  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="open()">&#9776;</button>
-  <div class="w3-container">
-    <h1>My Page</h1>
-  </div>
-</div>
-
-<img src="azzardo.jpg" alt="Tavolo da Gioco" style="width:100%">
-
-<div class="container">
-<h1>paragrafo inutile</h1>
-</div>
-
-</div>
-
-<script>
-function open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
-</script>
+    <div class="bgimg w3-display-container animate-opacity text-white">
+        <div class="display-topleft padding-large xlarge">
+            Logo
+        </div>
+        <div class="display-middle">
+            <h1 class="jumbo animate-top">CASINO</h1>
+            <hr class="border-grey" style="margin:auto;width:40%">
+            <p class="large center">Buona fortuna!</p>
+        </div>
+        <div class="display-bottomleft padding-large">
+          Fatto da 
+          <a href="https://lotteria-ale-e-luk.pallaro.repl.co/" target="_blank">Ale</a> & 
+          <a href="https://lotteria-ale-e-luk.pallaro.repl.co/" target="_blank">Luk</a>
+        </div>
+    </div>
 
 </body>
+
 </html>
