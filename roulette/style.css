@@ -100,3 +100,51 @@ body {
   font-size: 70px;
   color: #fff700;
 }
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #f15b04;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #cfcd2d;
+  position: absolute;
+  left: 660px;
+  top: 810px;
+}
+
+.button:hover {background-color: #ff0000}
+
+.button:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #cfcd2d;
+  transform: translateY(4px);
+}
+
+.button2 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #f15b04;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #cfcd2d;
+  position: absolute;
+  left: 1020px;
+  top: 810px;
+}
+
+.button2:hover {background-color: #ff0000}
+
+.button2:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #cfcd2d;
+  transform: translateY(4px);
+}
