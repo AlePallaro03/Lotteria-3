@@ -1,13 +1,44 @@
-
 h1 {
     text-align: center;
   /*
     height: 40px;
     width: 190px;
    */
-    background: red;
+    background-color: red;
 }
 
-#clicca{
+#roulette{
+  width: 103px;
+  height: 104px;
+  float: right;
+  border: 4px solid #ff0000;
+}
+#slot{
+  width: 103px;
+  height: 104px;
+  float: left;
+  border: 4px solid #21b524;
+}
+#grattaevinci{
+  width: 103px;
+  height: 104px;
+  float: left;
+  border: 4px solid #2114d7;
+
+}
+#biglie{
+  width: 165px;
+  height: 104px;
+  float: right;
+  border: 4px solid #a525b6;
+}
+#bordo{
   text-align: center;
+  width: 1856px;
+  height: 104px;
+  border: 4px solid #a525b6;
+  font-size: 30px;
+  background: -webkit-linear-gradient(#cb1515, #d3e01f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

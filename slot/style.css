@@ -82,3 +82,50 @@ span{
 #play:hover{
   transform:scale(1.2);
 }
+.button {
+  padding: 5px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #77198a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #5a1593;
+  position: absolute;
+  left: 0px;
+  top: 600px;
+}
+
+.button:hover {background-color: #333}
+
+.button:active {
+  background-color: #333;
+  box-shadow: 0 5px #cfcd2d;
+  transform: translateY(4px);
+}
+
+.button2 {
+  padding: 5px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #77198a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #5a1593;
+  position: absolute;
+  left: 180px;
+  top: 600px;
+}
+
+.button2:hover {background-color: #333}
+
+.button2:active {
+  background-color: #333;
+  box-shadow: 0 5px #5a1593;
+  transform: translateY(4px);
+}
