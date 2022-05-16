@@ -235,20 +235,3 @@ article {
   line-height: 210px;
   border: 4px solid #998100;
 }
-
-.biglie {
-  cursor: pointer;
-  outline: none;
-  border: none;
-  position: right;
-  left: 660px;
-  top: 10px;
-}
-
-.biglie:hover {background-color: #ff0000}
-
-.biglie:active {
-  background-color: #ff0000;
-  box-shadow: 0 5px #cfcd2d;
-  transform: translateY(4px);
-}
