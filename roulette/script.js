@@ -71,4 +71,11 @@ function roll(color) {
     document.getElementById("bal").innerHTML = bal;
     document.getElementById("stat").innerHTML = bets;
   }
+  
+  const buttonRitira = document.querySelector('.buttonRitira');
+  var saldo = 0;
+  buttonRitira.addEventListener('click', () => {
+    saldo == bal;
+    guadagno.innerHTML = bal;
+    });
 }

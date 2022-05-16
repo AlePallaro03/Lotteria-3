@@ -148,3 +148,27 @@ body {
   box-shadow: 0 5px #cfcd2d;
   transform: translateY(4px);
 }
+
+.buttonRitira {
+  padding: 9px 14px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #f15b04;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #cfcd2d;
+  position: absolute;
+  left: 93%;
+  top: 10%;
+}
+
+.buttonRitira:hover {background-color: #ff0000}
+
+.buttonRitira:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #cfcd2d;
+  transform: translateY(4px);
+}

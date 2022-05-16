@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+    var saldo = 0;
     const emojiContainer = document.querySelector('.emoji-container'),
           emojiOutput = document.querySelectorAll('.emoji-output'),
           dialogBox = document.querySelector('.dialog-box'),
@@ -9,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
           bellSound3 = document.querySelector('.bell-sound-3'),
           winSound = document.querySelector('.win-sound'),
           loseSound = document.querySelector('.lose-sound'),
-          winner = Math.floor(Math.random() * 9), //valore iniziale = 2
+          winner = Math.floor(Math.random() * 9),
           outputEmojis = a => emojiOutput.forEach((emoji, i) => emoji.textContent = a[i]),
           shuffleArray = a => {
               for (let i = a.length - 1; i > 0; i--) {
@@ -19,10 +20,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
               return a;
           },
+
+          
           init = () => {
+            saldo = saldo + winner;
               if (winner) {
                   emojis.push('💎');
-                  message = "Congratulazioni hai vinto!";
+                  message = "Congratulazioni hai vinto! " + winner + " euro";           
 
               } else {
                   emojis.push('⌚');
@@ -66,47 +70,24 @@ window.addEventListener("DOMContentLoaded", () => {
 
                 target.classList.add('winning-emoji');
 
-                //sound emojii
-                switch (winningEmojisFound) {
-                    case 0:
-                        bellSound1.play();
-                        break;
-                    case 1:
-                        bellSound2.play();
-                        break;
-                    case 2:
-                        bellSound3.play();
-                        break;
-                }
 
                 winningEmojisFound++;
             }
 
            
             if(emojisRemaining === 0) {
-
-               
-                setTimeout(() => {
-                    if (winner) {
-                        winSound.play();
-                        setTimeout(() => rainMoney(), 1200);
-                    } else {
-                        loseSound.play();
-                    }
-                }, 1500);
-
-               
                 dialogBox.classList.add('show-dialog');
                 dialogMessage.textContent = message;
             }
         }
     });
 
-  
 
     init(); //inizia il gioco
 
+  
 });
+
 
 //var num = Math.floor(Math.random()*1000);
 //alert('Hai vinto: ' + num + '€')
