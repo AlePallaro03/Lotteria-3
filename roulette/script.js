@@ -3,6 +3,9 @@ var cols = [];
 var nums = [];
 var bets = [];
 var h = 1;
+var saldo = 0;
+const buttonRitira = document.querySelector('.buttonRitira');
+const guadagnoRitira = document.querySelector('.guadagnoRitira');
 document.getElementById("bal").innerHTML = bal;
 
 function history() {
@@ -71,11 +74,10 @@ function roll(color) {
     document.getElementById("bal").innerHTML = bal;
     document.getElementById("stat").innerHTML = bets;
   }
-  
-  const buttonRitira = document.querySelector('.buttonRitira');
-  var saldo = 0;
-  buttonRitira.addEventListener('click', () => {
-    saldo == bal;
-    guadagno.innerHTML = bal;
-    });
+
 }
+  
+  buttonRitira.addEventListener('click', () => {
+      saldo+=win;
+      guadagnoRitira.innerHTML = saldo;
+  });
