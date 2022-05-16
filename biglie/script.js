@@ -1,1 +1,209 @@
-function _0x488c(_0xa0afdc,_0x24e4da){const _0xb9d08f=_0xb9d0();return _0x488c=function(_0x488c67,_0xf9ad58){_0x488c67=_0x488c67-0x13a;let _0xce52e6=_0xb9d08f[_0x488c67];return _0xce52e6;},_0x488c(_0xa0afdc,_0x24e4da);}const _0x5c3ab6=_0x488c;(function(_0xb31f4c,_0xc13e0e){const _0x385bb0=_0x488c,_0x32ca1b=_0xb31f4c();while(!![]){try{const _0x2af91c=-parseInt(_0x385bb0(0x143))/0x1+parseInt(_0x385bb0(0x15a))/0x2*(parseInt(_0x385bb0(0x171))/0x3)+parseInt(_0x385bb0(0x177))/0x4*(-parseInt(_0x385bb0(0x14f))/0x5)+-parseInt(_0x385bb0(0x14a))/0x6*(-parseInt(_0x385bb0(0x176))/0x7)+parseInt(_0x385bb0(0x173))/0x8+-parseInt(_0x385bb0(0x13a))/0x9+parseInt(_0x385bb0(0x157))/0xa;if(_0x2af91c===_0xc13e0e)break;else _0x32ca1b['push'](_0x32ca1b['shift']());}catch(_0x1d3d9f){_0x32ca1b['push'](_0x32ca1b['shift']());}}}(_0xb9d0,0x8fa2e),document[_0x5c3ab6(0x170)](_0x5c3ab6(0x172),function(_0x2c9967){const _0x32c6d3=_0x5c3ab6;console[_0x32c6d3(0x167)]('ok');const _0x2621c2=document['querySelector']('body'),_0x2b4d0c=document[_0x32c6d3(0x163)](_0x32c6d3(0x158)),_0x17cbe3=document[_0x32c6d3(0x163)](_0x32c6d3(0x13e)),_0x303377=_0x17cbe3[_0x32c6d3(0x163)]('h3'),_0x53993b=document[_0x32c6d3(0x163)]('.balls'),_0x1c41b1=[],_0x79495c=document[_0x32c6d3(0x174)](_0x32c6d3(0x17a)),_0x24641c=[],_0x35c54b=[];function _0x795a4e(_0x575bf6){const _0x4b9e66=_0x32c6d3,_0x240650=document[_0x4b9e66(0x16f)]('div');_0x240650[_0x4b9e66(0x15d)][_0x4b9e66(0x16d)](_0x4b9e66(0x142)),_0x17cbe3[_0x4b9e66(0x155)](_0x240650);for(let _0x2dfdc2=0x0;_0x2dfdc2<_0x575bf6;_0x2dfdc2++){const _0x1d5219=document['createElement'](_0x4b9e66(0x14e));_0x1d5219[_0x4b9e66(0x15d)]['add']('boardEl'),_0x240650[_0x4b9e66(0x155)](_0x1d5219);}const _0x45bb6b=document['getElementsByClassName'](_0x4b9e66(0x15b));for(let _0x541ecd=0x0;_0x541ecd<_0x45bb6b['length'];_0x541ecd++){_0x45bb6b[_0x541ecd]['setAttribute'](_0x4b9e66(0x16a),_0x541ecd+0x1);const _0x5f0590=_0x45bb6b[_0x541ecd]['getAttribute'](_0x4b9e66(0x16a)),_0x45d1b7=parseInt(_0x5f0590,0xa);_0x1c41b1[_0x4b9e66(0x175)](_0x45d1b7),_0x45bb6b[_0x541ecd][_0x4b9e66(0x14c)]=_0x45d1b7;}}_0x795a4e(0x31);const _0x2bf0c2=document[_0x32c6d3(0x163)](_0x32c6d3(0x13f)),_0x50e7fb=document[_0x32c6d3(0x16e)]('.boardEl');function _0x19b446(){const _0x6fe22=_0x32c6d3;_0x50e7fb['forEach'](_0x5897cb=>_0x5897cb[_0x6fe22(0x170)](_0x6fe22(0x17b),_0x2ce89b));function _0x2ce89b(){const _0x370b79=_0x6fe22,_0x2a8de1=parseInt(this[_0x370b79(0x160)]['number'],0xa);if(this['hasAttribute'](_0x370b79(0x16a)))_0x24641c[_0x370b79(0x13d)]===0x6?_0x19adc9():(_0x24641c[_0x370b79(0x162)](_0x2a8de1)<0x0&&_0x24641c[_0x370b79(0x175)](_0x2a8de1),console[_0x370b79(0x167)](_0x24641c),this[_0x370b79(0x161)](_0x370b79(0x16a)),this['classList'][_0x370b79(0x16d)](_0x370b79(0x140)));else{const _0x41cea8=this[_0x370b79(0x14c)],_0x14b5b4=parseInt(_0x41cea8,0xa);this['setAttribute']('data-number',_0x41cea8),this[_0x370b79(0x15d)][_0x370b79(0x148)](_0x370b79(0x140));const _0x5d0d7a=_0x24641c[_0x370b79(0x162)](_0x14b5b4);_0x5d0d7a>=0x0&&_0x24641c[_0x370b79(0x15c)](_0x5d0d7a,0x1);}console[_0x370b79(0x167)](_0x24641c,_0x24641c['length']);if(_0x24641c['length']<0x6){let _0x4084ac=document[_0x370b79(0x163)](_0x370b79(0x153));_0x4084ac!==null&&_0x4084ac[_0x370b79(0x15d)]['add'](_0x370b79(0x13b));}else{if(_0x24641c[_0x370b79(0x13d)]===0x6){console[_0x370b79(0x167)](_0x370b79(0x141)),console['log'](_0x24641c,_0x24641c[_0x370b79(0x13d)]);let _0x3b317b=document[_0x370b79(0x163)](_0x370b79(0x153));_0x3b317b===null?_0x4b31cc():_0x3b317b[_0x370b79(0x15d)][_0x370b79(0x148)](_0x370b79(0x13b));}}}return _0x24641c;}_0x19b446();function _0x19adc9(){const _0x4a83c1=_0x32c6d3,_0x258ef0=document[_0x4a83c1(0x16f)](_0x4a83c1(0x169));_0x2bf0c2[_0x4a83c1(0x155)](_0x258ef0),_0x258ef0[_0x4a83c1(0x15d)][_0x4a83c1(0x16d)](_0x4a83c1(0x14b)),_0x258ef0[_0x4a83c1(0x14c)]=_0x4a83c1(0x15e),setTimeout(()=>{const _0x148942=_0x4a83c1;_0x258ef0[_0x148942(0x147)]['removeChild'](_0x258ef0);},0x5dc);}function _0x54d149(){const _0x3d4b60=_0x32c6d3;console['log'](_0x24641c),_0x303377[_0x3d4b60(0x147)][_0x3d4b60(0x145)](_0x303377);const _0x151ee8=document[_0x3d4b60(0x16f)]('h3');_0x17cbe3[_0x3d4b60(0x155)](_0x151ee8),_0x151ee8['textContent']=_0x3d4b60(0x178);const _0x1decbb=document[_0x3d4b60(0x16f)]('div');_0x17cbe3[_0x3d4b60(0x155)](_0x1decbb),_0x1decbb[_0x3d4b60(0x15d)][_0x3d4b60(0x16d)]('numbersBoard');for(let _0x473527=0x0;_0x473527<_0x24641c[_0x3d4b60(0x13d)];_0x473527++){const _0x35fd3a=document['createElement']('div');_0x1decbb[_0x3d4b60(0x155)](_0x35fd3a),_0x35fd3a[_0x3d4b60(0x14c)]=_0x24641c[_0x473527];}}function _0x18e384(){const _0x5809f6=_0x32c6d3;_0x2bf0c2[_0x5809f6(0x147)][_0x5809f6(0x145)](_0x2bf0c2);}function _0x521fd7(){const _0x4180d4=_0x32c6d3;for(let _0x3405a9=0x0;_0x3405a9<0x6;_0x3405a9++){const _0x52af5e=Math[_0x4180d4(0x15f)](Math[_0x4180d4(0x152)]()*_0x1c41b1[_0x4180d4(0x13d)]);_0x35c54b[_0x4180d4(0x175)](_0x1c41b1[_0x52af5e]),_0x1c41b1['splice'](_0x52af5e,0x1),console[_0x4180d4(0x167)](_0x1c41b1);}const _0x2778f2=document[_0x4180d4(0x163)](_0x4180d4(0x153));return _0x2778f2['classList']['add'](_0x4180d4(0x13b)),_0x35c54b;}function _0x4b31cc(){const _0x5a2ba3=_0x32c6d3,_0x4afc38=document[_0x5a2ba3(0x16f)](_0x5a2ba3(0x14e));_0x4afc38[_0x5a2ba3(0x15d)]['add'](_0x5a2ba3(0x151)),_0x2b4d0c[_0x5a2ba3(0x155)](_0x4afc38),_0x4afc38[_0x5a2ba3(0x14c)]=_0x5a2ba3(0x156),_0x4afc38[_0x5a2ba3(0x170)]('click',_0x18e384),_0x4afc38[_0x5a2ba3(0x170)]('click',_0x54d149),_0x4afc38['addEventListener']('click',_0x521fd7),_0x4afc38['addEventListener'](_0x5a2ba3(0x17b),_0x571a72);}function _0x571a72(){const _0x48445c=_0x32c6d3;for(let _0x52ee97=0x0;_0x52ee97<_0x79495c[_0x48445c(0x13d)];_0x52ee97++){_0x79495c[_0x52ee97][_0x48445c(0x14c)]=_0x35c54b[_0x52ee97],setTimeout(()=>{const _0x27557e=_0x48445c;_0x79495c[_0x52ee97][_0x27557e(0x15d)][_0x27557e(0x148)]('invisible');},0x3e8*(_0x52ee97+0x1));}const _0x53ed70=[],_0x10bfa6=_0x35c54b,_0x3c3fe6=_0x24641c;for(let _0x57dccc=0x0;_0x57dccc<_0x10bfa6['length'];_0x57dccc++){for(let _0x32ea39=0x0;_0x32ea39<_0x3c3fe6[_0x48445c(0x13d)];_0x32ea39++){_0x10bfa6[_0x57dccc]===_0x3c3fe6[_0x32ea39]&&_0x53ed70[_0x48445c(0x175)](_0x10bfa6[_0x57dccc]);}}console[_0x48445c(0x167)](_0x10bfa6,_0x3c3fe6,_0x53ed70);function _0x2d2076(){const _0x39355e=_0x48445c,_0x1fd6e4=document['createElement'](_0x39355e(0x149));_0x2b4d0c[_0x39355e(0x155)](_0x1fd6e4);const _0x3c9d94=document[_0x39355e(0x16f)]('p');_0x1fd6e4[_0x39355e(0x155)](_0x3c9d94),_0x1fd6e4[_0x39355e(0x15d)][_0x39355e(0x16d)](_0x39355e(0x144)),_0x1fd6e4[_0x39355e(0x15d)][_0x39355e(0x16d)]('invisible'),console[_0x39355e(0x167)](_0x3c3fe6[_0x39355e(0x13d)]);if(_0x53ed70[_0x39355e(0x13d)]===0x0)_0x3c9d94[_0x39355e(0x14c)]=_0x39355e(0x16b)+_0x53ed70[_0x39355e(0x13d)]+_0x39355e(0x16c);else{if(_0x53ed70['length']==0x1)_0x3c9d94[_0x39355e(0x14c)]=_0x39355e(0x16b)+_0x53ed70[_0x39355e(0x13d)]+'\x20biglia';else{if(_0x53ed70['length']==0x2)_0x3c9d94[_0x39355e(0x14c)]='Per\x20poco!\x20('+_0x53ed70[_0x39355e(0x13d)]+_0x39355e(0x16c);else{if(_0x53ed70[_0x39355e(0x13d)]===0x3)_0x3c9d94['textContent']=_0x39355e(0x14d)+_0x53ed70['length']+_0x39355e(0x150);else{if(_0x53ed70[_0x39355e(0x13d)]===0x4)_0x3c9d94[_0x39355e(0x14c)]=_0x39355e(0x159)+_0x53ed70[_0x39355e(0x13d)]+_0x39355e(0x13c);else{if(_0x53ed70[_0x39355e(0x13d)]===0x5)_0x3c9d94[_0x39355e(0x14c)]=_0x39355e(0x159)+_0x53ed70['length']+_0x39355e(0x179);else _0x53ed70[_0x39355e(0x13d)]===0x6&&(_0x3c9d94['textContent']=_0x39355e(0x154));}}}}}setTimeout(()=>{const _0x42ea82=_0x39355e;_0x5b6e9d(),document[_0x42ea82(0x163)](_0x42ea82(0x146))[_0x42ea82(0x15d)]['remove'](_0x42ea82(0x13b));},0x1f40);}_0x2d2076();}function _0x5b6e9d(){const _0x51a371=_0x32c6d3,_0x53b216=document[_0x51a371(0x16f)]('a');_0x53b216[_0x51a371(0x15d)][_0x51a371(0x16d)](_0x51a371(0x164)),_0x2b4d0c[_0x51a371(0x155)](_0x53b216),_0x53b216['textContent']=_0x51a371(0x168),_0x53b216[_0x51a371(0x166)](_0x51a371(0x165),'https://lotteria-ale-e-luk.pallaro.repl.co/biglie/');}}));function _0xb9d0(){const _0x5b2157=['invisible','\x20,\x20hai\x20vinto\x20100\x20euro\x20','length','.lotto','.board','crossedOut','six\x20numbers','board','681921StIhWw','resultsBoard','removeChild','.resultsBoard','parentNode','remove','article','4102098WKrccN','alertBox','textContent','Hai\x20vinto!\x20(','button','1687265fMtfwi','\x20biglie)\x20hai\x20vinto\x2020\x20euro\x20','startDraw','random','.startDraw','Congratulazioni\x20hai\x20fatto\x20jackpot\x20e\x20ti\x20porti\x20a\x20casa\x201\x20MILIONE','append','Rilascia\x20le\x20biglie','6649190TrchtO','section','Hai\x20vinto!\x20','334706dTenAb','boardEl','splice','classList','I\x20tuoi\x20numeri','floor','dataset','removeAttribute','indexOf','querySelector','comebackBtn','href','setAttribute','log','Rigioca','div','data-number','Hai\x20perso!\x20(','\x20biglie)','add','querySelectorAll','createElement','addEventListener','18FzsOxm','DOMContentLoaded','5984616pWApaa','getElementsByClassName','push','7zEWUKV','8AmIhFm','Your\x20chosen\x20numbers','\x20,\x20hai\x20vinto\x201000\x20euro\x20','ball','click','10400724sdyGcR'];_0xb9d0=function(){return _0x5b2157;};return _0xb9d0();}
+document.addEventListener("DOMContentLoaded", function(e) {
+  console.log("ok");
+  const body = document.querySelector("body");
+  const section = document.querySelector("section");
+  const articleLotto = document.querySelector(".lotto");
+  const articleLottoHeader = articleLotto.querySelector("h3");
+  const articleBalls = document.querySelector(".balls");
+  const numbers = [];
+  const balls = document.getElementsByClassName("ball");
+  const drawnNums = [];
+  const chosenByMachine = [];
+
+  function createNumberBoard(number) {
+    const board = document.createElement("div");
+    board.classList.add("board");
+    articleLotto.append(board);
+    for (let i = 0; i < number; i++) {
+      const boardEl = document.createElement("button");
+      boardEl.classList.add("boardEl");
+      board.append(boardEl);
+    }
+    const boardEls = document.getElementsByClassName("boardEl");
+    for (let i = 0; i < boardEls.length; i++) {
+      boardEls[i].setAttribute("data-number", i + 1);
+      const dataNumber = boardEls[i].getAttribute("data-number");
+      const number = parseInt(dataNumber, 10);
+      numbers.push(number);
+      boardEls[i].textContent = number;
+    }
+  }
+  createNumberBoard(49);
+
+  const board = document.querySelector(".board");
+  const boardEls = document.querySelectorAll(".boardEl");
+
+  function drawNumbers() {
+    boardEls.forEach(boardEl => boardEl.addEventListener("click", selectNums));
+
+    function selectNums() {
+      const number = parseInt(this.dataset.number, 10);
+      if (this.hasAttribute("data-number")) {
+        if (drawnNums.length === 6) {
+          makeAlert();
+        } else {
+          if (drawnNums.indexOf(number) < 0) {
+            drawnNums.push(number);
+          }
+          console.log(drawnNums);
+          this.removeAttribute("data-number");
+          this.classList.add("crossedOut");
+        }
+      } else {
+        const newNum = this.textContent;
+        const trueNum = parseInt(newNum, 10);
+        this.setAttribute("data-number", newNum);
+        this.classList.remove("crossedOut");
+        const indx = drawnNums.indexOf(trueNum);
+        if (indx >= 0) {
+          drawnNums.splice(indx, 1);
+        }
+      }
+      console.log(drawnNums, drawnNums.length);
+      if (drawnNums.length < 6) {
+        let startDraw = document.querySelector(".startDraw");
+        if (startDraw !== null) {
+          startDraw.classList.add("invisible");
+        }
+      } else if (drawnNums.length === 6) {
+        console.log("six numbers");
+        console.log(drawnNums, drawnNums.length);
+        let startDraw = document.querySelector(".startDraw");
+        if (startDraw === null) {
+   
+          createButtonForMachineDraw();
+        } else {
+         
+          startDraw.classList.remove("invisible");
+        }
+      }
+    }
+    return drawnNums;
+  }
+  drawNumbers();
+
+  function makeAlert() {
+    const alertBox = document.createElement("div");
+    board.append(alertBox);
+    alertBox.classList.add("alertBox");
+    alertBox.textContent = "I tuoi numeri";
+    setTimeout(() => {
+      alertBox.parentNode.removeChild(alertBox);
+    }, 1500);
+  }
+
+  function showMyNumbers() {
+    console.log(drawnNums);
+    articleLottoHeader.parentNode.removeChild(articleLottoHeader);
+    const newHeader = document.createElement("h3");
+    articleLotto.append(newHeader);
+    newHeader.textContent = "Your chosen numbers";
+    const numbersBoard = document.createElement("div");
+    articleLotto.append(numbersBoard);
+    numbersBoard.classList.add("numbersBoard");
+    for (let i = 0; i < drawnNums.length; i++) {
+      const numDiv = document.createElement("div");
+      numbersBoard.append(numDiv);
+      numDiv.textContent = drawnNums[i];
+    }
+  }
+
+  function removeTheBoard() {
+    board.parentNode.removeChild(board);
+  }
+
+  function machineDraw() {
+    for (let i = 0; i < 6; i++) {
+      const idx = Math.floor(Math.random() * numbers.length);
+      chosenByMachine.push(numbers[idx]);
+  
+      numbers.splice(idx, 1);
+      console.log(numbers);
+      
+    }
+    const btnToRemove = document.querySelector(".startDraw");
+
+    btnToRemove.classList.add("invisible");
+
+    return chosenByMachine;
+  }
+  
+
+  function createButtonForMachineDraw() {
+    const startDraw = document.createElement("button");
+    startDraw.classList.add("startDraw");
+    section.append(startDraw);
+    startDraw.textContent = "Rilascia le biglie";
+    startDraw.addEventListener("click", removeTheBoard);
+    startDraw.addEventListener("click", showMyNumbers);
+    startDraw.addEventListener("click", machineDraw);
+    startDraw.addEventListener("click", compareArrays);
+  }
+
+  function compareArrays() {
+    for (let i = 0; i < balls.length; i++) {
+      balls[i].textContent = chosenByMachine[i];
+      setTimeout(() => {
+        balls[i].classList.remove("invisible");
+      }, 1000 * (i + 1));
+    }
+    const common = [];
+    const arr1 = chosenByMachine;
+    const arr2 = drawnNums;
+    for (let i = 0; i < arr1.length; i++) {
+      for (let j = 0; j < arr2.length; j++) {
+        if (arr1[i] === arr2[j]) {
+          common.push(arr1[i]);
+        }
+      }
+    }
+    console.log(arr1, arr2, common); 
+    function generateResult() {
+      const resultsBoard = document.createElement("article");
+      section.append(resultsBoard);
+      const paragraph = document.createElement("p");
+      resultsBoard.append(paragraph);
+      resultsBoard.classList.add("resultsBoard");
+      resultsBoard.classList.add("invisible");
+      console.log(arr2.length);
+
+      if (common.length === 0) {
+        paragraph.textContent =
+          "Hai perso! (" + common.length + " biglie)";
+        } else if (common.length == 1) {
+        paragraph.textContent =
+          "Hai perso! (" + common.length + " biglia";
+      } else if (common.length == 2) {
+        paragraph.textContent =
+          "Per poco! (" + common.length + " biglie)";
+      } else if (common.length === 3) {
+        paragraph.textContent =
+          "Hai vinto! (" + common.length + " biglie) hai vinto 20 euro ";
+      } else if (common.length === 4) {
+        paragraph.textContent =
+          "Hai vinto! " + common.length + " , hai vinto 100 euro ";
+      } else if (common.length === 5) {
+        paragraph.textContent =
+          "Hai vinto! " + common.length + " , hai vinto 1000 euro ";
+      } else if (common.length === 6) {
+        paragraph.textContent =
+          "Congratulazioni hai fatto jackpot e ti porti a casa 1 MILIONE";
+      }
+
+      setTimeout(() => {
+        makeComebackBtn();
+        document.querySelector(".resultsBoard").classList.remove("invisible"); 
+      }, 8000);
+    }
+
+    generateResult();
+  }
+
+  function makeComebackBtn() {
+    const comebackBtn = document.createElement("a");
+    comebackBtn.classList.add("comebackBtn");
+    section.append(comebackBtn);
+    comebackBtn.textContent = "Rigioca";
+    comebackBtn.setAttribute("href", "https://lotteria-ale-e-luk.pallaro.repl.co/biglie/");
+  }
+});

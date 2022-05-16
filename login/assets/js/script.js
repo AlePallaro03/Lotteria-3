@@ -1,1 +1,117 @@
-(function(_0x487274,_0x5a2f04){var _0xd639ec=_0x4652,_0x309a75=_0x487274();while(!![]){try{var _0x8ac2ac=parseInt(_0xd639ec(0x1a6))/0x1*(-parseInt(_0xd639ec(0x1ac))/0x2)+parseInt(_0xd639ec(0x1b7))/0x3+parseInt(_0xd639ec(0x194))/0x4*(parseInt(_0xd639ec(0x195))/0x5)+parseInt(_0xd639ec(0x1a5))/0x6+parseInt(_0xd639ec(0x1aa))/0x7*(-parseInt(_0xd639ec(0x1b1))/0x8)+parseInt(_0xd639ec(0x1a4))/0x9*(-parseInt(_0xd639ec(0x19c))/0xa)+-parseInt(_0xd639ec(0x1af))/0xb*(-parseInt(_0xd639ec(0x1a1))/0xc);if(_0x8ac2ac===_0x5a2f04)break;else _0x309a75['push'](_0x309a75['shift']());}catch(_0x552117){_0x309a75['push'](_0x309a75['shift']());}}}(_0x38d4,0x5b0a6));var aleEluk=function(){var _0x30d7a5=_0x4652,_0x4cf69b=document[_0x30d7a5(0x1a3)](_0x30d7a5(0x1a2))[_0x30d7a5(0x1a0)],_0x226a3f=document[_0x30d7a5(0x1a3)](_0x30d7a5(0x198))['value'],_0x3c2ba2=document[_0x30d7a5(0x1a3)](_0x30d7a5(0x193))[_0x30d7a5(0x1a0)],_0x3c82fa=document[_0x30d7a5(0x1a3)]('nome')['value'],_0x203005=document[_0x30d7a5(0x1a3)](_0x30d7a5(0x19e))[_0x30d7a5(0x1a0)];localStorage['setItem'](_0x30d7a5(0x1a2),_0x4cf69b),localStorage[_0x30d7a5(0x191)](_0x30d7a5(0x198),_0x226a3f),localStorage[_0x30d7a5(0x191)](_0x30d7a5(0x1b4),_0x3c82fa),localStorage['setItem'](_0x30d7a5(0x192),_0x203005),localStorage['setItem'](_0x30d7a5(0x1b3),_0x3c2ba2);};function verificaPassword(){var _0x3ac246=_0x4652;if(event['keyCode']>0x30&&event[_0x3ac246(0x1b2)]<0x39)alert(_0x3ac246(0x1ae)),document['getElementById']('nome')[_0x3ac246(0x1a0)]='';else{};if(event['keyCode']==0x20)alert(_0x3ac246(0x1ab)),document[_0x3ac246(0x1a3)](_0x3ac246(0x1b6))[_0x3ac246(0x1a0)]='';else{};}function verificaNumero(){var _0x4ba15d=_0x4652;if(event[_0x4ba15d(0x1b2)]>0x30&&event[_0x4ba15d(0x1b2)]<0x39)alert(_0x4ba15d(0x1ae)),document['getElementById']('nomeU')[_0x4ba15d(0x1a0)]='';else{};}function verificaSpazi(){var _0x43a547=_0x4652;if(event[_0x43a547(0x1b2)]==0x20)alert(_0x43a547(0x19f)),document[_0x43a547(0x1a3)](_0x43a547(0x1a2))[_0x43a547(0x1a0)]='',document[_0x43a547(0x1a3)](_0x43a547(0x198))['value']='';else{}}var verificaLogin=function(){var _0x1e60e4=_0x4652,_0x37efb1=document[_0x1e60e4(0x1a3)](_0x1e60e4(0x198))[_0x1e60e4(0x1a0)],_0x3d7a66=document[_0x1e60e4(0x1a3)]('password_conferma')[_0x1e60e4(0x1a0)];if(_0x37efb1!=_0x3d7a66){alert(_0x1e60e4(0x1b5));var _0x37efb1=document[_0x1e60e4(0x1a3)](_0x1e60e4(0x198))[_0x1e60e4(0x1a0)]='',_0x3d7a66=document[_0x1e60e4(0x1a3)](_0x1e60e4(0x193))[_0x1e60e4(0x1a0)]='';}else{var _0x691a12=document[_0x1e60e4(0x1a3)](_0x1e60e4(0x1b6))[_0x1e60e4(0x1a0)],_0xea94c5=document['getElementById'](_0x1e60e4(0x19e))[_0x1e60e4(0x1a0)],_0x453e44=document[_0x1e60e4(0x1a3)](_0x1e60e4(0x1a2))[_0x1e60e4(0x1a0)],_0x342e3d=document[_0x1e60e4(0x1a3)]('password')[_0x1e60e4(0x1a0)],_0x5092b2=document[_0x1e60e4(0x1a3)](_0x1e60e4(0x193))[_0x1e60e4(0x1a0)];_0x691a12==''||_0xea94c5==''||_0x453e44==''||_0x342e3d==''||_0x5092b2==''?alert(_0x1e60e4(0x197)):window['location'][_0x1e60e4(0x19a)]=_0x1e60e4(0x1a9);}};function salvataggio(){verificaLogin(),aleEluk();}function _0x4652(_0x548e1f,_0x7c3a0c){var _0x38d4d9=_0x38d4();return _0x4652=function(_0x465226,_0x2be654){_0x465226=_0x465226-0x191;var _0x3854a1=_0x38d4d9[_0x465226];return _0x3854a1;},_0x4652(_0x548e1f,_0x7c3a0c);}function verifica(){var _0x562bb9=_0x4652,_0x327369=document[_0x562bb9(0x1a3)]('loginUtente'),_0x1ba697=document['getElementById'](_0x562bb9(0x1ad));event['keyCode']==0x20?(alert(_0x562bb9(0x19d)),_0x327369[_0x562bb9(0x196)][_0x562bb9(0x1a8)]='2px\x20solid\x20red'):_0x327369[_0x562bb9(0x196)][_0x562bb9(0x1a8)]='2px\x20solid\x20black';}function reindirizzamento(){var _0x4c9d61=_0x4652;window['location']['href']=_0x4c9d61(0x1b0);}function _0x38d4(){var _0x6ecff8=['utentenome','Le\x20password\x20non\x20corrispondono,\x20riprova.','nome','469590scnSUk','setItem','utentesob','password_conferma','968coyoBZ','5110IbdUIV','style','Compila\x20i\x20campi','password','location','href','Dati\x20non\x20validi','290GIxvNI','Non\x20digitare\x20spazi','nomeU','Non\x20inserire\x20spazi.','value','12LnLaOW','utente','getElementById','155403UKYkLi','3288360EKAoAu','53185zuGDFB','loginUtente','borderBottom','login.html','414911JhHOMy','Non\x20inserire\x20spazi','2asBBVK','loginpassword','Non\x20inserire\x20numeri.','1028082KJxsLm','index.html','16EupNfD','keyCode','passwordConfirm'];_0x38d4=function(){return _0x6ecff8;};return _0x38d4();}function spazi(){var _0x28b7a5=_0x4652,_0x3eac7c=document[_0x28b7a5(0x1a3)](_0x28b7a5(0x1a7))['value'],_0x5bb90d=document[_0x28b7a5(0x1a3)](_0x28b7a5(0x1ad))[_0x28b7a5(0x1a0)];if(_0x3eac7c,_0x5bb90d=='')alert(_0x28b7a5(0x19b));else{var _0x3eac7c=document[_0x28b7a5(0x1a3)](_0x28b7a5(0x1a7))['value'],_0x5bb90d=document[_0x28b7a5(0x1a3)](_0x28b7a5(0x1ad))[_0x28b7a5(0x1a0)];_0x3eac7c==localStorage[_0x28b7a5(0x1a2)]&&_0x5bb90d==localStorage['password']?window[_0x28b7a5(0x199)][_0x28b7a5(0x19a)]='https://lotteria-3.pallaro.repl.co/home/index.html':alert(_0x28b7a5(0x19b));}}
+/*
+
+███╗   ██╗ ██████╗ ███╗   ██╗    ████████╗ ██████╗  ██████╗ ██████╗ █████╗ ██████╗ ███████╗    
+████╗  ██║██╔═══██╗████╗  ██║    ╚══██╔══╝██╔═══██╗██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝    
+██╔██╗ ██║██║   ██║██╔██╗ ██║       ██║   ██║   ██║██║     ██║     ███████║██████╔╝█████╗      
+██║╚██╗██║██║   ██║██║╚██╗██║       ██║   ██║   ██║██║     ██║     ██╔══██║██╔══██╗██╔══╝      
+██║ ╚████║╚██████╔╝██║ ╚████║       ██║   ╚██████╔╝╚██████╗╚██████╗██║  ██║██║  ██║███████╗    
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝       ╚═╝    ╚═════╝  ╚═════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    
+                                                                                               
+
+*/
+var aleEluk = function() {
+
+    var utente = document.getElementById('utente').value;
+    var password = document.getElementById('password').value;
+    var passwordConfirm = document.getElementById('password_conferma').value;
+    var utentenome = document.getElementById('nome').value;
+    var utentesob = document.getElementById('nomeU').value;
+      localStorage.setItem("utente", utente);
+      localStorage.setItem("password", password);
+      localStorage.setItem("utentenome", utentenome);
+      localStorage.setItem("utentesob", utentesob);
+      localStorage.setItem("passwordConfirm", passwordConfirm);
+  }
+  
+  function verificaPassword() {
+    if(event.keyCode > 48 && event.keyCode < 57) {
+      alert("Non inserire numeri.")
+      document.getElementById('nome').value = "";
+    } else {
+    };
+    if(event.keyCode == 32) {
+      alert("Non inserire spazi")
+      document.getElementById('nome').value = "";
+    }else {
+  
+    };
+  }
+  
+  function verificaNumero() {
+    if(event.keyCode > 48 && event.keyCode < 57) {
+      alert("Non inserire numeri.")
+      document.getElementById('nomeU').value = "";
+    } else {
+    };
+  }
+  function verificaSpazi() {
+    if(event.keyCode == 32) {
+      alert("Non inserire spazi.")
+      document.getElementById('utente').value = "";
+      document.getElementById('password').value = "";
+    }else {
+  
+    }
+  }
+  
+  
+  var verificaLogin = function() {
+  
+    var password1 = document.getElementById('password').value;
+    var password2 = document.getElementById('password_conferma').value;
+  
+    if(password1 != password2) {
+      alert("Le password non corrispondono, riprova.");
+      var password1 = document.getElementById('password').value = "";
+      var password2 = document.getElementById('password_conferma').value = "";
+    } else {
+        var campo1 = document.getElementById('nome').value;
+        var campo2 = document.getElementById('nomeU').value;
+        var campo3 = document.getElementById('utente').value;
+        var campo4 = document.getElementById('password').value;
+        var campo5 = document.getElementById('password_conferma').value;
+         if( campo1 == "" || campo2 == "" || campo3 == "" || campo4 == "" || campo5 == ""){
+           alert("Compila i campi");
+          }   else {
+                window.location.href = "login.html";
+         }
+    }
+  }
+  function salvataggio() {
+    verificaLogin();
+    aleEluk();
+  
+  }
+  
+  function verifica() {
+    var campo1 = document.getElementById('loginUtente');
+    var campo2 = document.getElementById('loginpassword');
+  
+    if(event.keyCode == 32) {
+      alert("Non digitare spazi");
+      campo1.style.borderBottom = "2px solid red";
+    } else {
+      campo1.style.borderBottom = "2px solid black";
+      }
+  }
+  
+  function reindirizzamento() {
+    window.location.href = "index.html";
+  }
+  
+  function spazi() {
+    var loginUtente = document.getElementById('loginUtente').value;
+    var loginpassword = document.getElementById('loginpassword').value;
+    if(loginUtente, loginpassword == "") {
+      alert("Dati non validi");
+    } else {
+      var loginUtente = document.getElementById('loginUtente').value;
+      var loginpassword = document.getElementById('loginpassword').value;
+  
+      if(loginUtente == localStorage.utente && loginpassword == localStorage.password ) {
+      window.location.href="https://lotteria-3.pallaro.repl.co/home/index.html";
+    } else {
+      alert("Dati non validi")
+    }
+    }
+  }

@@ -44,4 +44,33 @@
   <button class="button2" onclick="window.location.href='https://lotteria-3.pallaro.repl.co/home/index.html'">Torna alla home</button>
   
 </body>
+
+        <div id="audio">
+        <audio controls loop autoplay hidden>
+     
+            <source src="music/music.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+        var audio = new Audio('music/music.mp3');
+        audio.volume = 0.1;
+        audio.play();
+        if (audio) {
+
+  window.addEventListener('keydown', function (event) {
+
+    var key = event.which || event.keyCode;
+
+    if (key === 32) { // spacebar
+
+      
+      event.preventDefault();
+
+      audio.paused ? audio.play() : audio.pause();
+
+    }
+
+  });
+}
+    </script>
 </html>
