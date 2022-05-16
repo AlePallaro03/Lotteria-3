@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <meta name="viewport" content="width=device-width,utente-scalable=0">
     <title> Login </title>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
@@ -11,30 +11,30 @@
     <div class="container">
         <div class="box">
             <form method="POST">
-                <div class="cadastro"> ALE E LUK </div>
+                <div class="aleEluk"> ALE E LUK </div>
                 <div class="line">
                     <label for="nome" class="labelLine"></label>
-                    <input type="text" name="nome" placeholder="Nome" class="nome" maxlength="20" id="nome" onkeyup="verTecla()">
+                    <input type="text" name="nome" placeholder="Nome" class="nome" maxlength="20" id="nome" onkeyup="verificaPassword()">
                 </div>
                 <div class="line name">
                     <label for="nome" class="labelLine"></label>
-                    <input type="text" name="nome" placeholder="Cognome" class="nome" maxlength="30" id="sobrenome" onkeyup="verificarNumeros()">
+                    <input type="text" name="nome" placeholder="Cognome" class="nome" maxlength="30" id="nomeU" onkeyup="verificaNumero()">
                 </div>
                 <div class="line">
-                    <label for="cad_user" class="labelLine"></label>
-                    <input type="text" name="cad_user" id="cad_user"  placeholder="Nome Utente" onkeyup="verificarEspaco()">
+                    <label for="utente" class="labelLine"></label>
+                    <input type="text" name="utente" id="utente"  placeholder="Nome Utente" onkeyup="verificaSpazi()">
                 </div>
                 <div class="line">
-                    <label for="cad_senha" class="labelLine">  </label>
-                    <input type="password" name="cad_senha" id="cad_senha"  placeholder="Password" style="font-weight: 400;" onkeyup="verificarEspaco()">
+                    <label for="password" class="labelLine">  </label>
+                    <input type="password" name="password" id="password"  placeholder="Password" style="font-weight: 400;" onkeyup="verificaSpazi()">
                 </div>
                 <div class="line">
-                    <label for="cad_senha" class="labelLine">  </label>
-                    <input type="password" name="cad_senha" id="senha_confirm"  placeholder="Conferma Password" style="font-weight: 400;">
+                    <label for="password" class="labelLine">  </label>
+                    <input type="password" name="password" id="password_conferma"  placeholder="Conferma Password" style="font-weight: 400;">
                 </div>
             </form>
-            <div class="cadastro">
-                <div class="button" onclick="salvar()"> Invia </div>
+            <div class="aleEluk">
+                <div class="button" onclick="salvataggio()"> Invia </div>
             </div>
             <div class="line dir">
                 <div class="direitos"> Tutte le informazioni rimarranno riservate. Nessun dato verrà divulgato</div>

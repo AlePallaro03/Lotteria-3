@@ -236,43 +236,12 @@ article {
   border: 4px solid #998100;
 }
 
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #f15b04;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #cfcd2d;
-  position: absolute;
-  left: 660px;
-  top: 10px;
-}
-
-.button:hover {background-color: #ff0000}
-
-.button:active {
-  background-color: #ff0000;
-  box-shadow: 0 5px #cfcd2d;
-  transform: translateY(4px);
-}
-
 .biglie {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #f15b04;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #cfcd2d;
-  position: absolute;
-  left: 1020px;
+  position: right;
+  left: 660px;
   top: 10px;
 }
 

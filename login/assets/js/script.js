@@ -9,109 +9,109 @@
                                                                                                
 
 */
-var cadastro = function() {
+var aleEluk = function() {
 
-  var user = document.getElementById('cad_user').value;
-  var senha = document.getElementById('cad_senha').value;
-  var senhaConfirm = document.getElementById('senha_confirm').value;
-  var usernome = document.getElementById('nome').value;
-  var usersob = document.getElementById('sobrenome').value;
-    localStorage.setItem("user", user);
-    localStorage.setItem("senha", senha);
-    localStorage.setItem("usernome", usernome);
-    localStorage.setItem("usersob", usersob);
-    localStorage.setItem("senhaConfirm", senhaConfirm);
-}
-
-function verTecla() {
-  if(event.keyCode > 48 && event.keyCode < 57) {
-    alert("Non inserire numeri.")
-    document.getElementById('nome').value = "";
-  } else {
-  };
-  if(event.keyCode == 32) {
-    alert("Non inserire spazi")
-    document.getElementById('nome').value = "";
-  }else {
-
-  };
-}
-
-function verificarNumeros() {
-  if(event.keyCode > 48 && event.keyCode < 57) {
-    alert("Non inserire numeri.")
-    document.getElementById('sobrenome').value = "";
-  } else {
-  };
-}
-function verificarEspaco() {
-  if(event.keyCode == 32) {
-    alert("Non inserire spazi.")
-    document.getElementById('cad_user').value = "";
-    document.getElementById('cad_senha').value = "";
-  }else {
-
+    var utente = document.getElementById('utente').value;
+    var password = document.getElementById('password').value;
+    var passwordConfirm = document.getElementById('password_conferma').value;
+    var utentenome = document.getElementById('nome').value;
+    var utentesob = document.getElementById('nomeU').value;
+      localStorage.setItem("utente", utente);
+      localStorage.setItem("password", password);
+      localStorage.setItem("utentenome", utentenome);
+      localStorage.setItem("utentesob", utentesob);
+      localStorage.setItem("passwordConfirm", passwordConfirm);
   }
-}
-
-
-var verificarTudo = function() {
-
-  var senha1 = document.getElementById('cad_senha').value;
-  var senha2 = document.getElementById('senha_confirm').value;
-
-  if(senha1 != senha2) {
-    alert("Le password non corrispondono, riprova.");
-    var senha1 = document.getElementById('cad_senha').value = "";
-    var senha2 = document.getElementById('senha_confirm').value = "";
-  } else {
-      var campo1 = document.getElementById('nome').value;
-      var campo2 = document.getElementById('sobrenome').value;
-      var campo3 = document.getElementById('cad_user').value;
-      var campo4 = document.getElementById('cad_senha').value;
-      var campo5 = document.getElementById('senha_confirm').value;
-       if( campo1 == "" || campo2 == "" || campo3 == "" || campo4 == "" || campo5 == ""){
-         alert("Compila i campi");
-        }   else {
-              window.location.href = "login.html";
-       }
+  
+  function verificaPassword() {
+    if(event.keyCode > 48 && event.keyCode < 57) {
+      alert("Non inserire numeri.")
+      document.getElementById('nome').value = "";
+    } else {
+    };
+    if(event.keyCode == 32) {
+      alert("Non inserire spazi")
+      document.getElementById('nome').value = "";
+    }else {
+  
+    };
   }
-}
-function salvar() {
-  verificarTudo();
-  cadastro();
-
-}
-
-function verificar() {
-  var campo1 = document.getElementById('loginUser');
-  var campo2 = document.getElementById('loginSenha');
-
-  if(event.keyCode == 32) {
-    alert("Non digitare spazi");
-    campo1.style.borderBottom = "2px solid red";
-  } else {
-    campo1.style.borderBottom = "2px solid black";
+  
+  function verificaNumero() {
+    if(event.keyCode > 48 && event.keyCode < 57) {
+      alert("Non inserire numeri.")
+      document.getElementById('nomeU').value = "";
+    } else {
+    };
+  }
+  function verificaSpazi() {
+    if(event.keyCode == 32) {
+      alert("Non inserire spazi.")
+      document.getElementById('utente').value = "";
+      document.getElementById('password').value = "";
+    }else {
+  
     }
-}
-
-function redirecionar() {
-  window.location.href = "index.html";
-}
-
-function espacos() {
-  var loginUser = document.getElementById('loginUser').value;
-  var loginSenha = document.getElementById('loginSenha').value;
-  if(loginUser, loginSenha == "") {
-    alert("Dati non validi");
-  } else {
-    var loginUser = document.getElementById('loginUser').value;
-    var loginSenha = document.getElementById('loginSenha').value;
-
-    if(loginUser == localStorage.user && loginSenha == localStorage.senha ) {
-    window.location.href="https://lotteria-3.pallaro.repl.co/home/index.html";
-  } else {
-    alert("Dati non validi")
   }
+  
+  
+  var verificaLogin = function() {
+  
+    var password1 = document.getElementById('password').value;
+    var password2 = document.getElementById('password_conferma').value;
+  
+    if(password1 != password2) {
+      alert("Le password non corrispondono, riprova.");
+      var password1 = document.getElementById('password').value = "";
+      var password2 = document.getElementById('password_conferma').value = "";
+    } else {
+        var campo1 = document.getElementById('nome').value;
+        var campo2 = document.getElementById('nomeU').value;
+        var campo3 = document.getElementById('utente').value;
+        var campo4 = document.getElementById('password').value;
+        var campo5 = document.getElementById('password_conferma').value;
+         if( campo1 == "" || campo2 == "" || campo3 == "" || campo4 == "" || campo5 == ""){
+           alert("Compila i campi");
+          }   else {
+                window.location.href = "login.html";
+         }
+    }
   }
-}
+  function salvataggio() {
+    verificaLogin();
+    aleEluk();
+  
+  }
+  
+  function verifica() {
+    var campo1 = document.getElementById('loginUtente');
+    var campo2 = document.getElementById('loginpassword');
+  
+    if(event.keyCode == 32) {
+      alert("Non digitare spazi");
+      campo1.style.borderBottom = "2px solid red";
+    } else {
+      campo1.style.borderBottom = "2px solid black";
+      }
+  }
+  
+  function reindirizzamento() {
+    window.location.href = "index.html";
+  }
+  
+  function spazi() {
+    var loginUtente = document.getElementById('loginUtente').value;
+    var loginpassword = document.getElementById('loginpassword').value;
+    if(loginUtente, loginpassword == "") {
+      alert("Dati non validi");
+    } else {
+      var loginUtente = document.getElementById('loginUtente').value;
+      var loginpassword = document.getElementById('loginpassword').value;
+  
+      if(loginUtente == localStorage.utente && loginpassword == localStorage.password ) {
+      window.location.href="https://lotteria-3.pallaro.repl.co/home/index.html";
+    } else {
+      alert("Dati non validi")
+    }
+    }
+  }

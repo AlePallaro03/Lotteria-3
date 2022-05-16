@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const alertBox = document.createElement("div");
     board.append(alertBox);
     alertBox.classList.add("alertBox");
-    alertBox.textContent = "you already chose 6!";
+    alertBox.textContent = "I tuoi numeri";
     setTimeout(() => {
       alertBox.parentNode.removeChild(alertBox);
     }, 1500);
@@ -169,22 +169,25 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
       if (common.length === 0) {
         paragraph.textContent =
-          "Oh caro! " + common.length + " biglie e zero contanti";
-      } else if (common.length > 0 && common.length < 3) {
+          "Hai perso! (" + common.length + " biglie)";
+        } else if (common.length == 1) {
         paragraph.textContent =
-          "Niente, è uscita solamente:  " + common.length + " biglia, non hai vinto ";
+          "Hai perso! (" + common.length + " biglia";
+      } else if (common.length == 2) {
+        paragraph.textContent =
+          "Per poco! (" + common.length + " biglie)";
       } else if (common.length === 3) {
         paragraph.textContent =
-          "Non male, " + common.length + " , hai vinto 20 euro ";
+          "Hai vinto! (" + common.length + " biglie) hai vinto 20 euro ";
       } else if (common.length === 4) {
         paragraph.textContent =
-          "Non male, " + common.length + " , hai vinto 100 euro ";
+          "Hai vinto! " + common.length + " , hai vinto 100 euro ";
       } else if (common.length === 5) {
         paragraph.textContent =
-          "Non male, " + common.length + " , hai vinto 1000 euro ";
+          "Hai vinto! " + common.length + " , hai vinto 1000 euro ";
       } else if (common.length === 6) {
         paragraph.textContent =
-          "Un vero vincitore " + common.length + " hai fatto jackpot e ti porti a casa 1 MILIONE";
+          "Congratulazioni hai fatto jackpot e ti porti a casa 1 MILIONE";
       }
 
       setTimeout(() => {
