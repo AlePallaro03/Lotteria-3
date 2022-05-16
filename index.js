@@ -11,7 +11,7 @@ console.log(`
 ██╔══██║██║     ██╔══╝      ██╔══╝      ██║     ██║   ██║██╔═██╗ 
 ██║  ██║███████╗███████╗    ███████╗    ███████╗╚██████╔╝██║  ██╗
 ╚═╝  ╚═╝╚══════╝╚══════╝    ╚══════╝    ╚══════╝ ╚═════╝ ╚═╝  ╚═╝
-  `)
+`)
 
 //console.log("Inserire /event nell'URL per aprire la lotteria") //output
 const router = require('./router.js');
@@ -55,7 +55,7 @@ webServer.get('/slot', function(req,res){
 });
 
 webServer.listen(port, function(){ //funzione per output in console
-const P = ['//','--', '||']; //vettore con simboli
+const P = ['/','-', '|']; //vettore con simboli
 let x = 0;
 const loader = setInterval(() => {
   process.stdout.write(`\r${P[x++]}`);
@@ -65,5 +65,7 @@ console.log(`\x1b[40m\x1b[36m Programma in esecuzione alla porta: ${port}`) //ou
 });
 
 //Vincita in console, non toccare per ora
+/*
 var num = Math.floor(Math.random()*1000);
 alert('Hai vinto: ' + num + '€')
+*/

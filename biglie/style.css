@@ -260,7 +260,7 @@ article {
   transform: translateY(4px);
 }
 
-.button2 {
+.biglie {
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;
@@ -276,9 +276,9 @@ article {
   top: 10px;
 }
 
-.button2:hover {background-color: #ff0000}
+.biglie:hover {background-color: #ff0000}
 
-.button2:active {
+.biglie:active {
   background-color: #ff0000;
   box-shadow: 0 5px #cfcd2d;
   transform: translateY(4px);
