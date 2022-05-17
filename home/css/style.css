@@ -38,11 +38,6 @@ h1 {
 #bordo{
   text-align: center;
    font-size: 50px;
-  background: rgb(85,0,255);
-  background: linear-gradient(120deg, rgba(85,0,255,1) 0%, rgba(209,0,255,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
 }
 
 .immagineB {
