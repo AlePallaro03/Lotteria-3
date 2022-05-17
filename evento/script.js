@@ -4,7 +4,8 @@ var CONFIG = {
 	serverLink: "",
 	volume: 0,
 	//videoVolume: 0.1,
-	
+
+  
 	backgroundCard: [
         { bg:'img/background/Logo.jpg', /*character:'img/background/',*/ loadcolor:'rgb(230,230,176)' },
 	],
@@ -41,6 +42,7 @@ var CONFIG = {
 
 
 };
+
 
 var BG = {
 	

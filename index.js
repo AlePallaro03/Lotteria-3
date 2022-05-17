@@ -10,7 +10,7 @@ const express = require('express'); //importiamo modulo esterno (express)
 const path = require('path'); //importo path
 const webServer = express();
 const port = 30120; //numero della porta
-const soldi = 0;
+
 console.log("\x1b[40m\x1b[36m Casinò da: ") //output
 console.log(`
  █████╗ ██╗     ███████╗    ███████╗    ██╗     ██╗   ██╗██╗  ██╗
@@ -34,7 +34,8 @@ webServer.get('/', function(req,res){
 
 webServer.use('/login', express.static('login')); //pagine del login
 webServer.get('/login', function(req,res){
-   res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, '/index.html'));
+
 });
 
 webServer.use('/home', express.static('home')); //home per la scelta dei giochi
