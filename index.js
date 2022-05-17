@@ -1,9 +1,17 @@
+/*
+██ ███    ██ ██████  ███████ ██   ██         ██ ███████ 
+██ ████   ██ ██   ██ ██       ██ ██          ██ ██      
+██ ██ ██  ██ ██   ██ █████     ███           ██ ███████ 
+██ ██  ██ ██ ██   ██ ██       ██ ██     ██   ██      ██ 
+██ ██   ████ ██████  ███████ ██   ██ ██  █████  ███████ 
+*/
+
 const express = require('express'); //importiamo modulo esterno (express)
 const path = require('path'); //importo path
 const webServer = express();
 const port = 30120; //numero della porta
 const soldi = 0;
-console.log("\x1b[40m\x1b[36m Lotteria realizzata da: ") //output
+console.log("\x1b[40m\x1b[36m Casinò da: ") //output
 console.log(`
  █████╗ ██╗     ███████╗    ███████╗    ██╗     ██╗   ██╗██╗  ██╗
 ██╔══██╗██║     ██╔════╝    ██╔════╝    ██║     ██║   ██║██║ ██╔╝

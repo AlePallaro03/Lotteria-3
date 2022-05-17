@@ -186,44 +186,6 @@ var BG = {
     }
 };
 
-var VIDEO = {
-	
-	isPlayOne: false,
-	isPlayTwo: false,
-	
-	onClickPlay: function(data, idx)
-	{
-		console.log("onClickPlay");
-		
-		if (idx == 0)
-		{
-			if(VIDEO.isPlayTwo == true)
-			{
-				VIDEO.isPlayTwo = false;
-				videoTwo.pause();
-			}
-			
-			if(VIDEO.isPlayOne == false) videoOne.play();
-			else videoOne.pause();
-			VIDEO.isPlayOne = !VIDEO.isPlayOne;
-		}
-		else
-		{
-			if(VIDEO.isPlayOne == true)
-			{
-				VIDEO.isPlayOne = false;
-				videoOne.pause();
-			}
-			
-			if(VIDEO.isPlayTwo == false) videoTwo.play();
-			else videoTwo.pause();
-			VIDEO.isPlayTwo = !VIDEO.isPlayTwo;
-		}
-		
-		if (VIDEO.isPlayOne == true || VIDEO.isPlayTwo == true) V.onMuted();
-		else V.onUnmuted();
-	}
-};
 
 var V = {
 	
@@ -267,7 +229,7 @@ var V = {
         CONFIG.volume = value;
         audioblock.volume = value;
 		if(V.isMuted == true && value > 0) V.isMuted = false;
-		audioblock.play(); // debug
+		audioblock.play(); 
 		V.updateIcon();
 	},
 	
