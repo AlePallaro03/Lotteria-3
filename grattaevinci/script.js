@@ -1,17 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
 
     var saldo = 0;
-    const emojiContainer = document.querySelector('.emoji-container'),
-          emojiOutput = document.querySelectorAll('.emoji-output'),
+    const contenitoreNumeri = document.querySelector('.num-container'),
+          numOutput = document.querySelectorAll('.num-output'),
           dialogBox = document.querySelector('.dialog-box'),
           dialogMessage = document.querySelector('.dialog-message'),
-          bellSound1 = document.querySelector('.bell-sound-1'),
-          bellSound2 = document.querySelector('.bell-sound-2'),
-          bellSound3 = document.querySelector('.bell-sound-3'),
-          winSound = document.querySelector('.win-sound'),
-          loseSound = document.querySelector('.lose-sound'),
           winner = Math.floor(Math.random() * 9),
-          outputEmojis = a => emojiOutput.forEach((emoji, i) => emoji.textContent = a[i]),
+          outputnum = a => numOutput.forEach((num, i) => num.textContent = a[i]),
           shuffleArray = a => {
               for (let i = a.length - 1; i > 0; i--) {
                   const j = Math.floor(Math.random() * (i + 1));
@@ -23,17 +18,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
           
           init = () => {
-            saldo = saldo + winner;
+            saldo = saldo + winner; 
               if (winner) {
-                  emojis.push('💎');
-                  message = "Congratulazioni hai vinto! " + winner + " euro";           
+                  numeri.push('3'); //numero vincente
+                  message = "Congratulazioni hai vinto! " + winner + " euro";  //winner(valore random vincita) 
 
               } else {
-                  emojis.push('⌚');
-                  message = "Hai perso! Grazie per aver giocato";
+                  num.push('6'); 
+                  message = "Hai perso! Grazie per aver giocato"; //output quando si perde
               }
 
-              outputEmojis(shuffleArray(emojis));
+              outputnum(shuffleArray(numeri));
           },
           rainMoney = () => {
               const w = window.innerWidth;
@@ -50,32 +45,32 @@ window.addEventListener("DOMContentLoaded", () => {
               }
           };
 
-    let emojis = ['👜', '🏆', '🍾', '🎁', '👑', '💍', '💎', '💎'], //lista delle emoji disponbili
-        winningEmojisFound = 0,
-        emojisRemaining = 9,
-        message = '';
+    let numeri = ['1', '2', '3', '4', '5', '6', '7', '8', '9'], //VETTORE CON I NUMERI POSSIBILI
+      numeriVincentiTrovati = 0, //Impostiamo i numeri trovati vincenti a 0
+      numeriRimasti = 9, //numeri rimasti iniziali 9
+      message = '';
 
-    emojiContainer.addEventListener('click', e => {
+      contenitoreNumeri.addEventListener('click', e => {
 
         const target = e.target;
 
-        if (target.classList.contains('emoji-btn') && !target.classList.contains('uncovered')) {
+        if (target.classList.contains('num-btn') && !target.classList.contains('uncovered')) {
 
-            emojisRemaining--;
+          //  numeriRemaining--;
 
             target.classList.add('uncovered');
 
             //Check dell'emoji per la vincita
-            if (target.textContent === '💎') {
+            if (target.textContent === '3') {
 
-                target.classList.add('winning-emoji');
+                target.classList.add('winning-num');
 
 
-                winningEmojisFound++;
+                winningnumeriFound++;
             }
 
            
-            if(emojisRemaining === 0) {
+            if(numeriRemaining === 0) {
                 dialogBox.classList.add('show-dialog');
                 dialogMessage.textContent = message;
             }
