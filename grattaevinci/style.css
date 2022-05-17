@@ -16,20 +16,15 @@ body {
     color: #fff;
     padding: 20px;
     overflow-x: hidden;
-    /*background-image: linear-gradient(
-        to bottom right,
-        #cfcd2d 0%,
-        #f15b04 100%*/
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,107,1) 35%, rgba(255,145,0,1) 100%);
+    background: rgb(0,30,36);
+    background: linear-gradient(120deg, rgba(0,30,36,1) 0%, rgba(31,9,121,1) 35%, rgba(255,94,0,1) 100%);
     );
 }
 
 .card {
     padding: 25px;
     border-radius: 20px;
-    border: 3px solid #ff0000;
-    background-color: #ff0000;
+    border: 3px solid #ff0000 ;
     background-image: url("https://media.istockphoto.com/vectors/vector-poker-black-background-playing-card-symbols-pattern-blackjack-vector-id868429174?k=20&m=868429174&s=612x612&w=0&h=QoDZl-R2-YuSFWiEQJRaG1WJKNhmhAPYlndsBKmlkdg=");
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -39,7 +34,7 @@ body {
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     border-radius: 20px;
-    border: 3px solid #f15b04;
+    border: 3px solid #ffffff;
     overflow: hidden;
     background-color: #ffffff;
     background-image: url("https://st6.cannypic.com/thumbs/36/360495_632_canny_pic.jpg");
@@ -129,13 +124,6 @@ h2 {
     height: 150px;
     font-weight: 600;
     border-radius: 25px;
-    border: 3px solid #114007;
-    background-image: linear-gradient(
-        to right,
-        #f5f5f5,
-        #cf6cc9 33%,
-        #ee609c 66%,
-        #ee609c
     );
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translate(-50%, -50%);
@@ -151,45 +139,10 @@ h2 {
     margin-bottom: 0;
 }
 
-.dollar-bill {
-    position: absolute;
-    bottom: 100%;
-    font-size: 50px;
-    user-select: none;
-    animation: rainMoney 3s linear forwards;
-}
-
-.dollar-bill:nth-child(2n) {
-    animation-delay: 100ms;
-}
-
-.dollar-bill:nth-child(3n) {
-    animation-delay: 400ms;
-}
-
-.dollar-bill:nth-child(4n) {
-    animation-delay: 800ms;
-}
-
-.dollar-bill:nth-child(5n) {
-    animation-delay: 1.2s;
-}
 
 @keyframes showDialog {
     100% {
         top: 50%;
-    }
-}
-
-@keyframes rainMoney {
-    90% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        bottom: 15px;
-        transform: rotate(360deg);
     }
 }
 .button {
@@ -198,11 +151,11 @@ h2 {
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #f15b04;
+  color: #000000;
+  background-color: #007bff;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #cfcd2d;
+  box-shadow: 0 9px #ffd500;
   position: absolute;
   left: 660px;
   top: 810px;
@@ -212,7 +165,7 @@ h2 {
 
 .button:active {
   background-color: #ff0000;
-  box-shadow: 0 5px #cfcd2d;
+  box-shadow: 0 5px #ffd500;
   transform: translateY(4px);
 }
 
@@ -222,11 +175,11 @@ h2 {
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #f15b04;
+  color: #000000;
+  background-color: #007bff;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #cfcd2d;
+  box-shadow: 0 9px #ffd500;
   position: absolute;
   left: 1020px;
   top: 810px;
@@ -236,6 +189,6 @@ h2 {
 
 .button2:active {
   background-color: #ff0000;
-  box-shadow: 0 5px #cfcd2d;
+  box-shadow: 0 5px #ffd500;
   transform: translateY(4px);
 }

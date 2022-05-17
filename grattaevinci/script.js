@@ -33,16 +33,6 @@ window.addEventListener("DOMContentLoaded", () => {
           rainMoney = () => {
               const w = window.innerWidth;
 
-              //in caso di vincita scenderanno i dollari
-              for(i = 0; i < 70; i++) {
-                  const dollar = document.createElement('div');
-
-                  dollar.classList.add('dollar-bill');
-                  dollar.textContent = '💵';
-                  dollar.style.left = `${Math.floor(Math.random() * w)}px`;
-
-                  document.body.appendChild(dollar)
-              }
           };
 
     let numeri = ['1', '2', '3', '4', '5', '6', '7', '8', '9'], //VETTORE CON I NUMERI POSSIBILI
