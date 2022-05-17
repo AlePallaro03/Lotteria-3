@@ -152,10 +152,10 @@ h2 {
   cursor: pointer;
   outline: none;
   color: #000000;
-  background-color: #007bff;
+  background-color: #00ccff;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #ffd500;
+  box-shadow: 0 9px #007bff;
   position: absolute;
   left: 660px;
   top: 810px;
@@ -176,10 +176,10 @@ h2 {
   cursor: pointer;
   outline: none;
   color: #000000;
-  background-color: #007bff;
+  background-color: #00ccff;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #ffd500;
+  box-shadow: 0 9px #007bff;
   position: absolute;
   left: 1020px;
   top: 810px;
@@ -189,6 +189,5 @@ h2 {
 
 .button2:active {
   background-color: #ff0000;
-  box-shadow: 0 5px #ffd500;
   transform: translateY(4px);
 }

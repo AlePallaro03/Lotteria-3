@@ -1,24 +1,10 @@
 /*
 body{
-  background-color: #1D1E22;
-  cursor: none;
-}
-
-.rounded{
-  width: 30px;
-  height: 30px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-
-.pointed{
-  width: 7px;
-  height: 7px;
-  background-color: white;
-  border-radius: 50%;
+  background-image: url('img/azzardo.jpg');
 }
 */
 h1 {
+  
     text-align: center;
     background-color: red;
 }
@@ -47,14 +33,21 @@ h1 {
   height: 104px;
   float: right;
   border: 4px solid #a525b6;
+  
 }
 #bordo{
   text-align: center;
-  width: 1856px;
-  height: 104px;
-  border: 4px solid #a525b6;
-  font-size: 30px;
-  background: -webkit-linear-gradient(#cb1515, #d3e01f);
+   font-size: 50px;
+  background: rgb(85,0,255);
+  background: linear-gradient(120deg, rgba(85,0,255,1) 0%, rgba(209,0,255,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+}
+
+.immagineB {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

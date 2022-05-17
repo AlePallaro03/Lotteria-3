@@ -1,6 +1,6 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => { //metodo EventTarget dell'interfaccia imposta una funzione che verrà chiamata ogni volta che l'evento specificato viene consegnato alla destinazione
 
-    var saldo = 0;
+   var saldo=0;
     const contenitoreNumeri = document.querySelector('.num-container'),
           numOutput = document.querySelectorAll('.num-output'),
           dialogBox = document.querySelector('.dialog-box'),
