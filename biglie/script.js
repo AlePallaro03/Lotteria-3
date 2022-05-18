@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function(e) {
   console.log("ok");
-  const body = document.querySelector("body");
-  const section = document.querySelector("section");
-  const articleLotto = document.querySelector(".lotto");
-  const articleLottoHeader = articleLotto.querySelector("h3");
-  const articleBalls = document.querySelector(".balls");
-  const numbers = [];
+  const body = document.querySelector("body"); //dichiaro costante doby 
+  const section = document.querySelector("section"); //dichiaro costante section
+  const articleLotto = document.querySelector(".lotto"); //dichiaro costante articleLotto
+  const articleLottoHeader = articleLotto.querySelector("h3"); //dichiaro costante articleLottoHEader
+  const articleBalls = document.querySelector(".balls"); //dichiaro costante articleBalls
+  const numbers = []; //dichiaro costante doby 
   const balls = document.getElementsByClassName("ball");
   const drawnNums = [];
   const chosenByMachine = [];
 
+  
   function createNumberBoard(number) {
     const board = document.createElement("div");
     board.classList.add("board");
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
       boardEl.classList.add("boardEl");
       board.append(boardEl);
     }
-    const boardEls = document.getElementsByClassName("boardEl");
+    const boardEls = document.getElementsByClassName("boardEl"); //prendo elemento con nome classe ="boardEl"
     for (let i = 0; i < boardEls.length; i++) {
       boardEls[i].setAttribute("data-number", i + 1);
       const dataNumber = boardEls[i].getAttribute("data-number");
