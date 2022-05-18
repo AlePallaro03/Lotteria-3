@@ -22,21 +22,22 @@ var aleEluk = function() {
       localStorage.setItem("utentesob", utentesob);
       localStorage.setItem("passwordConfirm", passwordConfirm);
   }
-  
+
+//FUNZIONE CHE VERIFICA LA CORRETTEZZA DELLA PASSWORD
   function verificaPassword() {
     if(event.keyCode > 48 && event.keyCode < 57) {
       alert("Non inserire numeri.")
       document.getElementById('nome').value = "";
     } else {
     };
-    if(event.keyCode == 32) {
+    if(event.keyCode == 32) { //CHECK SE SONO STATI INSERITI SPAZI NELLA PASSWORD
       alert("Non inserire spazi")
       document.getElementById('nome').value = "";
     }else {
   
     };
   }
-  
+  //FUNZIONE PER LA VERIFICA SE SONO STATI INSERITI NUMERI NEL NOME
   function verificaNumero() {
     if(event.keyCode > 48 && event.keyCode < 57) {
       alert("Non inserire numeri.")
@@ -44,6 +45,7 @@ var aleEluk = function() {
     } else {
     };
   }
+//FUNZIONE PER LA VERIFICA DEGLI SPAZI IN NICKNAME E PASSWORD
   function verificaSpazi() {
     if(event.keyCode == 32) {
       alert("Non inserire spazi.")
@@ -54,7 +56,7 @@ var aleEluk = function() {
     }
   }
   
-  
+  //CREO LA FUNZIONE VERIFICALOGIN
   var verificaLogin = function() {
   
     var password1 = document.getElementById('password').value;
