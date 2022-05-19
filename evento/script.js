@@ -121,15 +121,7 @@ var BG = {
 		document.querySelectorAll('.content-page').forEach((elem) => {elem.style.display = 'none'; });
 		let p = document.getElementById(`page_${page}`);
 		p.style.display = 'flex';
-		
-		if (VIDEO.isPlayOne == true || VIDEO.isPlayTwo == true) 
-		{
-			videoOne.pause();
-			videoTwo.pause();
-			VIDEO.isPlayOne = false;
-			VIDEO.isPlayTwo = false;
-			V.onUnmuted();
-		}
+
     },
 	
 	effectCard: function()

@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
   const drawnNums = [];
   const chosenByMachine = [];
 
-  
+
+  //Creo i numeri in tabella (49) 
   function createNumberBoard(number) {
-    const board = document.createElement("div");
-    board.classList.add("board");
-    articleLotto.append(board);
+    const board = document.createElement("div"); //CreateElement è un metodo che crea un elemento HTML specificato con un tag, in questo caso div
+    board.classList.add("board"); //classlist è una proprietà di sola lettura che restituisce una raccolta degli attributi di classe dell'elemento. 
+    articleLotto.append(board); //csa fa append? il contenuto viene inserito come ultimo elemento interno degli elementi cui è associato il metodo append().
     for (let i = 0; i < number; i++) {
       const boardEl = document.createElement("button");
       boardEl.classList.add("boardEl");
@@ -29,16 +30,16 @@ document.addEventListener("DOMContentLoaded", function(e) {
       boardEls[i].textContent = number;
     }
   }
-  createNumberBoard(49);
+  createNumberBoard(49); //assegno alla funzione 49 come parametro
 
   const board = document.querySelector(".board");
-  const boardEls = document.querySelectorAll(".boardEl");
+  const boardEls = document.querySelectorAll(".boardEl"); //ritorno tutti gli elementi contenuti in boardEls che combaciano con il selettore css indicato
 
   function drawNumbers() {
     boardEls.forEach(boardEl => boardEl.addEventListener("click", selectNums));
 
     function selectNums() {
-      const number = parseInt(this.dataset.number, 10);
+      const number = parseInt(this.dataset.number, 10); //la funzione parseint analizza un argomento stringa e restituisce un intero della radice specificat
       if (this.hasAttribute("data-number")) {
         if (drawnNums.length === 6) {
           makeAlert();
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
           startDraw.classList.add("invisible");
         }
       } else if (drawnNums.length === 6) {
-        console.log("six numbers");
+        console.log("sei numeri");
         console.log(drawnNums, drawnNums.length);
         let startDraw = document.querySelector(".startDraw");
         if (startDraw === null) {
@@ -83,12 +84,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
   }
   drawNumbers();
 
-  function makeAlert() {
-    const alertBox = document.createElement("div");
+  function makeAlert() { //funzione di avviso
+    const alertBox = document.createElement("div"); //CreateElement è un metodo che crea un elemento HTML specificato con un tag, in questo caso div
     board.append(alertBox);
-    alertBox.classList.add("alertBox");
-    alertBox.textContent = "I tuoi numeri";
-    setTimeout(() => {
+    alertBox.classList.add("alertBox"); //classlist è una proprietà di sola lettura che restituisce una raccolta degli attributi di classe dell'elemento. 
+    alertBox.textContent = "I tuoi numeri"; //contenuto di testo con messaggio di output
+    setTimeout(() => { //imposto il timeout
       alertBox.parentNode.removeChild(alertBox);
     }, 1500);
   }
@@ -168,27 +169,27 @@ document.addEventListener("DOMContentLoaded", function(e) {
       resultsBoard.classList.add("invisible");
       console.log(arr2.length);
 
-      if (common.length === 0) {
+      if (common.length === 0) { //se le biglie uscite non corrispondono neanche con una nostra
         paragraph.textContent =
-          "Hai perso! (" + common.length + " biglie)";
-        } else if (common.length == 1) {
+          "Hai perso! (" + common.length + " biglie)"; //messaggio di output con dichiarazione di sconfitta
+        } else if (common.length == 1) { //se esce solo una biglia uguale alla nostra 
         paragraph.textContent =
-          "Hai perso! (" + common.length + " biglia";
-      } else if (common.length == 2) {
+          "Hai perso! (" + common.length + " biglia"; //messaggio di output con dichiarazione di sconfitta
+      } else if (common.length == 2) { //se escono due biglie uguali alla nostre
         paragraph.textContent =
-          "Per poco! (" + common.length + " biglie)";
-      } else if (common.length === 3) {
+          "Per poco! (" + common.length + " biglie)"; //messaggio di output con dichiarazione di sconfitta
+      } else if (common.length === 3) { //se escono tre biglie uguale alle nostre
         paragraph.textContent =
-          "Hai vinto! (" + common.length + " biglie) hai vinto 20 euro ";
-      } else if (common.length === 4) {
+          "Hai vinto! (" + common.length + " biglie) hai vinto 20 euro "; //messaggio di output con valore di vittoria deciso
+      } else if (common.length === 4) { //se escono quattro biglie uguali alle nostre
         paragraph.textContent =
-          "Hai vinto! " + common.length + " , hai vinto 100 euro ";
-      } else if (common.length === 5) {
+          "Hai vinto! " + common.length + " , hai vinto 100 euro "; //messaggio di output con valore di vittoria deciso
+      } else if (common.length === 5) { //se escono cinque biglie uguali alle nostre
         paragraph.textContent =
-          "Hai vinto! " + common.length + " , hai vinto 1000 euro ";
-      } else if (common.length === 6) {
+          "Hai vinto! " + common.length + " , hai vinto 1000 euro "; //messaggio di output con valore di vittoria deciso
+      } else if (common.length === 6) { //Se escono tutte le biglie uguali alle nostre 
         paragraph.textContent =
-          "Congratulazioni hai fatto jackpot e ti porti a casa 1 MILIONE";
+          "Congratulazioni hai fatto jackpot e ti porti a casa 1 MILIONE"; //messaggio di output con il jackpot massimo di vittoria
       }
 
       setTimeout(() => {
@@ -197,14 +198,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
       }, 8000);
     }
 
-    generateResult();
+    generateResult(); //genero i risultati delle biglie
   }
 
-  function makeComebackBtn() {
+  function makeComebackBtn() { //funzione per rigiocare 
     const comebackBtn = document.createElement("a");
     comebackBtn.classList.add("comebackBtn");
     section.append(comebackBtn);
-    comebackBtn.textContent = "Rigioca";
-    comebackBtn.setAttribute("href", "https://lotteria-ale-e-luk.pallaro.repl.co/biglie/");
+    comebackBtn.textContent = "Rigioca"; //contenuto di testo: Rigioca
+    comebackBtn.setAttribute("href", "https://lotteria-ale-e-luk.pallaro.repl.co/biglie/"); //assegniamo come attributo il nostro link per ricaricare la pagina
   }
 });

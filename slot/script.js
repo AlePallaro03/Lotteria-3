@@ -10,9 +10,9 @@ p = Math.floor(Math.random() * pos.length),vel = 200,pi, be = 0, mdm = //"https:
 }, cso=1, init=false;
 
 function playgame() {
-  var counts = document.querySelectorAll(".mul");
-  if (vel == 200) {
-    for (var c = 0; c < counts.length; c++) {
+  var counts = document.querySelectorAll(".mul"); //PRENDO DAL DOCUMENTO TUTTI GLI ELEMENTI .MUL
+  if (vel == 200) { //SE VEL è UGUALE A 200
+    for (var c = 0; c < counts.length; c++) { //USO COUNTS.LENGHT PER RESTITUIRE LA LUNGHEZZA
       if (counts[c].innerText > 0)
           break;
       if (c == counts.length - 1) {

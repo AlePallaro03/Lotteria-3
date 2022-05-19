@@ -56,22 +56,24 @@
             <source src="music/music.mp3" type="audio/mp3">
         </audio>
     </div>
+
+    <!--SCRIPT PER AUDIO-->
     <script>
-        var audio = new Audio('music/music.mp3');
-        audio.volume = 0.1;
-        audio.play();
-        if (audio) {
+        var audio = new Audio('music/music.mp3'); //AGGIUNGO ALLA VARIABILE AUDIO IL COSTRUTTORE AUDIO CON DENTRO IL PERCORSO DELLA MUSICA DA NOI SCELTA
+        audio.volume = 0.1; //IMPOSTO IL VALORE DELL'AUDIO (VALORE MASSIMO 1, VALORE MINIMO 0.01)
+        audio.play(); //FACCIO PARTIRE AUDIO CON METODO PLAY
+        if (audio) { //SE AUDIO
 
-  window.addEventListener('keydown', function (event) {
+  window.addEventListener('keydown', function (event) { //AGGIUNGO UNA FUNZIONE ASCOLTATORE
 
-    var key = event.which || event.keyCode;
+    var key = event.which || event.keyCode; 
 
-    if (key === 32) { // spacebar
+    if (key === 32) { //SE PREMO IL TASTO 32 (SPACEBAR O BARRA DI SPAZIAMENTO)
 
      
       event.preventDefault();
 
-      audio.paused ? audio.play() : audio.pause();
+      audio.paused ? audio.play() : audio.pause(); //L'AUDIO VIENE MESSO IN PAUSA
 
     }
 
