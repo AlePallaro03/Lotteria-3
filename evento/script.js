@@ -123,7 +123,10 @@ var BG = {
 		p.style.display = 'flex';
 
     },
-	
+
+
+
+  //CREO EFFETTO DEL BOX CON MOVIMENTO A SECONDA DEL MOVIMENTO DEL CURSORE
 	effectCard: function()
 	{
 		banner.addEventListener('mousemove', e => 
@@ -166,7 +169,10 @@ var BG = {
 			overlayShine.style.background = "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 80%)";
 		});
 	},
-	
+
+
+
+  
 	resultText: function(elText)
 	{
 		let result = '';
