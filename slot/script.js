@@ -1,6 +1,6 @@
-var w = 0,d = 100, st = false,pos = [0, 1, 2, 3, 4, 5, 7, 9, 11, 17, 16, 15, 14, 13, 12, 10, 8, 6],
+var w = 0, d = 100, st = false,pos = [0, 1, 2, 3, 4, 5, 7, 9, 11, 17, 16, 15, 14, 13, 12, 10, 8, 6],
 p = Math.floor(Math.random() * pos.length),vel = 200,pi, be = 0, mdm = //"https://www.sessiontown.com/games/keyboard/piano//"
- sounds = {
+ sounds = {  //souni per ogni emoji che esce
     "t1" : new Audio(mdm+"f3.mp3"), "t2" : new Audio(mdm+"g3.mp3"),
     "t3" : new Audio(mdm+"a3.mp3"), "t4" : new Audio(mdm+"b3.mp3"),
     "t5" : new Audio(mdm+"c4.mp3"), "t6" : new Audio(mdm+"d4.mp3"),
@@ -49,34 +49,34 @@ function playgame() {
     var again = false;
     switch (cs[pos[p]].innerText) {
       case "🍒":
-        w = parseInt(counts[0].innerText) * 10;
+        w = parseInt(counts[0].innerText) * 10; //valore di vincita in caso escano le 🍒
         break;
       case "🍎":
-        w = parseInt(counts[1].innerText) * 20;
+        w = parseInt(counts[1].innerText) * 20; //valore di vincita in caso escano le 🍎
         break;
       case "🍊":
-        w = parseInt(counts[2].innerText) * 30;
+        w = parseInt(counts[2].innerText) * 30;  //valore di vincita in caso escano le 🍊
         break;
       case "🍈":
-        w = parseInt(counts[3].innerText) * 40;
+        w = parseInt(counts[3].innerText) * 40;  //valore di vincita in caso escano le 🍈
         break;
       case "🍉":
-        w = parseInt(counts[4].innerText) * 50;
+        w = parseInt(counts[4].innerText) * 50;  //valore di vincita in caso escano le 🍉
         break;
       case "🔔":
-        w = parseInt(counts[5].innerText) * 60;
+        w = parseInt(counts[5].innerText) * 60;  //valore di vincita in caso escano le 🔔
         break;
       case "🎰":
-        w = parseInt(counts[6].innerText) * 70;
+        w = parseInt(counts[6].innerText) * 70;  //valore di vincita in caso escano le 🎰
         break;
       case "🌟":
-        w = parseInt(counts[7].innerText) * 80;
+        w = parseInt(counts[7].innerText) * 80;  //valore di vincita in caso escano le 🌟
         break;
       case "🔥":
-        w = parseInt(counts[8].innerText) * 100;
+        w = parseInt(counts[8].innerText) * 100;  //valore di vincita in caso escano le 🔥
         break;
       case "💣":
-        w = parseInt(counts[9].innerText) * 200;
+        w = parseInt(counts[9].innerText) * 200;  //valore di vincita in caso escano le 💣
         break;
       default:
         again = true;
@@ -106,7 +106,7 @@ function playgame() {
   if (init) vel--; else vel++;
 }
 
-function bet(b) {
+function bet(b) { //funzione bet con parametro b
   if (st)  return; 
   document.getElementById("w").innerText = "00000";
   if (d > 0) {
