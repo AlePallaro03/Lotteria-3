@@ -2,7 +2,7 @@ var CONFIG = {
 	
 	serverName: "Ale & Luk",
 	serverLink: "",
-	volume: 0,
+	volume: 0, //volume di partenza audio
 	//videoVolume: 0.1,
 
   
@@ -20,12 +20,6 @@ var CONFIG = {
 	],
 	
 	news: [
-        { img: 'img/news/2.gif', title:'Title 1', desc:'detailed description of the news.' },
-        { img: '', title:'Title 2', desc:'detailed description of the news. detailed description of the news.' },
-        { img: '', title:'Title 3', desc:'detailed description of the news.' },
-        { img: 'img/news/1.jpg', title:'Title 4', desc:'description description description.' },
-        { img: '', title:'Title 5', desc:'detailed description of the.' },
-        { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQLcbj38Y06op2LjJ7bbYVZpduonaPSUjmOg&usqp=CAU', title:'Title 4', desc:'description description description.' }
     ],
 	
 	rules: [
@@ -48,7 +42,7 @@ var BG = {
 	
 	onLoadPage: function()
     {
-		document.querySelectorAll('.servername').forEach((elem) => { elem.innerText = CONFIG.serverName;});
+		document.querySelectorAll('.servername').forEach((elem) => { elem.innerText = CONFIG.serverName;}); //prendiamo servername e per ogni elemento ne inseriamo il server name
 		serverLink.innerText = CONFIG.serverLink;
 		musicVolumeSlider.value = CONFIG.volume;
 		
