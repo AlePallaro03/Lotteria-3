@@ -9,6 +9,7 @@
                                                                                                
 
 */
+
 var aleEluk = function() {
 
     var utente = document.getElementById('utente').value;
@@ -16,11 +17,11 @@ var aleEluk = function() {
     var passwordConfirm = document.getElementById('password_conferma').value;
     var utentenome = document.getElementById('nome').value;
     var utentesob = document.getElementById('nomeU').value;
-      localStorage.setItem("utente", utente);
-      localStorage.setItem("password", password);
-      localStorage.setItem("utentenome", utentenome);
-      localStorage.setItem("utentesob", utentesob);
-      localStorage.setItem("passwordConfirm", passwordConfirm);
+      salvadati.setItem("utente", utente);
+      salvadati.setItem("password", password);
+      salvadati.setItem("utentenome", utentenome);
+      salvadati.setItem("utentesob", utentesob);
+      salvadati.setItem("passwordConfirm", passwordConfirm);
   }
 
 //FUNZIONE CHE VERIFICA LA CORRETTEZZA DELLA PASSWORD
@@ -117,3 +118,5 @@ var aleEluk = function() {
     }
     }
   }
+
+

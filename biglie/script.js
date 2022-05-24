@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     articleLottoHeader.parentNode.removeChild(articleLottoHeader);
     const newHeader = document.createElement("h3");
     articleLotto.append(newHeader);
-    newHeader.textContent = "Your chosen numbers";
+    newHeader.textContent = "I tuoi numeri scelti: ";
     const numbersBoard = document.createElement("div");
     articleLotto.append(numbersBoard);
     numbersBoard.classList.add("numbersBoard");
